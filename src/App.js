@@ -1,17 +1,25 @@
-import React, { Component } from 'react';
+import React,{Component} from 'react';
+import ViewPage1 from './Component/ViewPage1';
+import ViewPage2 from './Component/ViewPage2';
+import ViewPage3 from './Component/ViewPage3';
+import ViewPage4 from './Component/ViewPage4';
+import ViewPage5 from './Component/ViewPage5';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+class App  extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {  }
+  }
+  render() { 
+    return ( 
+      <div className="App_Main">
+        <ViewPage1 />
+        <ViewPage2 />
+        <ViewPage3 />
+        <ViewPage4 />
+        <ViewPage5 />
       </div>
-    );
+     );
   }
 }
 

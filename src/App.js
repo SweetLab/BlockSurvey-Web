@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import { Scroll } from './Funtion';
 import ViewPage1 from './Component/ViewPage1';
 import ViewPage2 from './Component/ViewPage2';
 import ViewPage3 from './Component/ViewPage3';
@@ -10,9 +11,11 @@ class App  extends Component {
     super(props);
     this.state = {  }
   }
+
+
   render() { 
     return ( 
-      <div className="App_Main">
+      <div onScroll={`${Scroll}`} className="App_Main">
         <ViewPage1 />
         <ViewPage2 />
         <ViewPage3 />

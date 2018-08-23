@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TopBar from './TopBar';
 import Nav from './Nav';
+import '../Css/viewpage.css';
 
 class ViewPage5 extends Component {
     constructor(props) {
@@ -9,14 +10,13 @@ class ViewPage5 extends Component {
     }
     render() { 
         return ( 
-            <div>
+            <div id="page5"  className="View_Main_Page">
                 <TopBar>
 
                 </TopBar>
                 <Nav>
 
                 </Nav>
-                
             </div>
          );
     }

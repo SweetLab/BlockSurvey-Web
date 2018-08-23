@@ -9,7 +9,7 @@ class TopBar extends Component {
     render() { 
         return ( 
             <div className="Logo">
-                <img src={Logo} alt=""/>
+                <img onClick={this.props.onChangeScroll} src={Logo} alt="로고"/>
             </div>
          );
     }

@@ -4,6 +4,10 @@ body {
   /* font-weight: 100; weight-min */
   /* font-weight: 600; weight-bold */
   /* font-weight: 400; weight-main */
-  height: 500%;
+  margin: 0;
+  padding: 0;
+  height: 500vh;
   font-family: 'Roboto';
+  overflow-x:hidden; 
+  overflow-y:auto;
 }

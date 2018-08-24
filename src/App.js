@@ -1,36 +1,41 @@
 import React,{Component} from 'react';
-import {SectionsContainer, Section, Header, Footer } from 'react-fullpage';
+// import Main from './container/Main/Main'
+import ReactFullpage from '@fullpage/react-fullpage';
 import MainDefaultLayout from './components/Main/MaindefaultLayout'
 
 class App  extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      options : {
-        sectionClassName : 'section',
-        anchors : ['page1', 'page2', 'page3', 'page4','page5'],
-      }
+      fullpageOptions : {
+        callbacks: ['onLeave'],
+      },
     }
   }
   render() {
     return ( 
-        <SectionsContainer {...this.state.options}>
-          <Section>
+      <div>
+        <ReactFullpage {...this.state.fullpageOptions} 
+        render={({ state, fullpageApi }) => (
+          <div>
+          <div className="section">
+            <MainDefaultLayout PageNum={1}/>
+          </div>
+          <div className="section">
             <MainDefaultLayout PageNum={2}/>
-          </Section>
-          <Section>
+          </div>
+          <div className="section">
             <MainDefaultLayout PageNum={3}/>
-          </Section>
-          <Section>
+          </div>
+          <div className="section">
             <MainDefaultLayout PageNum={4}/>
-          </Section>
-          <Section>
+          </div>
+          <div className="section">
             <MainDefaultLayout PageNum={5}/>
-          </Section>
-          <Section>
-            <MainDefaultLayout PageNum={6}/>
-          </Section>
-        </SectionsContainer>
+          </div>
+        </div>
+        )}/>
+      </div>
      );
   }
 }

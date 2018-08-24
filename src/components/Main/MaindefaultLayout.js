@@ -9,13 +9,13 @@ class MainDefaultLayout extends Component {
   render() { 
     const { PageNum } =this.props
     return (
-      <div className="View_Main_Page" id={`page${PageNum}`}>
-        <TopBar 
-          onChangeScroll = {Scrolling}
-        />
-        <Navi/>
-        <img onClick={Scrolling} src={BottomBtn} alt="하단 버튼"/>
-      </div>
+        <div className="View_Main_Page" id={`page${PageNum}`}>
+          <TopBar 
+            onChangeScroll = {Scrolling}
+          />
+          <Navi/>
+          <img src={BottomBtn} alt="하단 버튼" className="DownBtn"/>
+        </div>
     );
   }
 }

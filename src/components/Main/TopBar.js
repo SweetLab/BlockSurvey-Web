@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import {Logo} from '../../assets/assets'
+import Logo from '../../assets/Logo.png';
+import Menu from '../../assets/menuBtn.png';
+import './css/topbar.css'
 
 class TopBar extends Component {
     constructor(props) {
@@ -7,10 +9,15 @@ class TopBar extends Component {
         this.state = {  }
     }
     render() { 
-        return ( 
-            <div className="Logo">
-                <img onClick={this.props.onChangeScroll} src={Logo} alt="로고"/>
-            </div>
+        return (
+            <header className="Main_Header">
+                <div className="Logo">
+                    <img src={Logo} alt="로고"/>
+                </div>
+                <div className="MenuBtn">
+                    <img src={Menu} alt="메뉴버튼"/>
+                </div>
+            </header>
          );
     }
 }

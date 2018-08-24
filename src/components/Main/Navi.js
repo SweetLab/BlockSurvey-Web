@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Nav extends Component {
+class Navi extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -12,4 +12,4 @@ class Nav extends Component {
     }
 }
  
-export default Nav;
+export default Navi;

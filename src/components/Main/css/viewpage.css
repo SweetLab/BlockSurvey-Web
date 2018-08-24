@@ -5,27 +5,37 @@
     height: 100vh;
 }
 
-#page1 {
+.section#page1 {
     background: url('../../../assets/Main_Image_1.png');
-    background-size: 100%;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: repeat;
 }
 
-#page2 {
+.section#page2 {
     background: url('../../../assets/Main_Image_2.png');
-    background-size: 100%;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: repeat;
 }
 
-#page3 {
+.section#page3 {
     background: url('../../../assets/Main_Image_3.png');
-    background-size: 100%;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: repeat;
 }
 
-#page4 {
+.section#page4 {
     background: url('../../../assets/Main_Image_4.png');
-    background-size: 100%;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: repeat;
 }
 
-#page5 {
+.section#page5 {
     background: url('../../../assets/Main_Image_5.png');
-    background-size: 100%;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: repeat;
 }

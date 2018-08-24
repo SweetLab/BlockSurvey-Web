@@ -6,8 +6,8 @@ class Center_Block extends Component {
         super(props);
         this.state = {  }
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <div className="Center_Position_Text">
                 <span className="Main_Text">BlockSurvey</span>
                 <span className="Sub_Text">Safe and transparent</span>

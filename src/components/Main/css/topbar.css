@@ -1,0 +1,33 @@
+.Main_Header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.Logo {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    background-color: white;
+    display: inline-block;
+    margin: 1vw;
+}
+
+.Logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.MenuBtn {
+    position: absolute;
+    right: 0;
+    width: 3.6vw;
+    height: 3.6vw;
+    display: inline-block;
+    margin: 1.5vw;
+}
+
+.MenuBtn img {
+    width: 100%;
+    height: 100%;
+}

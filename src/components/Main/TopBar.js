@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Logo from '../Image/menu-btn.png'
+import {Logo} from '../../assets/assets'
 
 class TopBar extends Component {
     constructor(props) {

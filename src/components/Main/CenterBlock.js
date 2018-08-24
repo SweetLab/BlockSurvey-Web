@@ -8,8 +8,9 @@ class Center_Block extends Component {
     }
     render() { 
         return ( 
-            <div>
-
+            <div className="Center_Position_Text">
+                <span className="Main_Text">BlockSurvey</span>
+                <span className="Sub_Text">Safe and transparent</span>
             </div>
          );
     }

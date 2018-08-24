@@ -13,7 +13,7 @@ class ViewPage1 extends Component {
     }
     render() { 
         return ( 
-            <div onChangeScroll={Scroll}   id="page1" className="View_Main_Page">
+            <div onScrollCapture ={Scroll} id="page1" className="View_Main_Page">
                 <TopBar 
                     onChangeScroll = {onclick}
                 />

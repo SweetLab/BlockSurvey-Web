@@ -6,25 +6,26 @@
 }
 
 #page1 {
-    background-color: #FF0000;
+    background: url('../../../assets/Main_Image_1.png');
+    background-size: 100%;
 }
 
 #page2 {
-    background-color: #00FF00;
+    background: url('../../../assets/Main_Image_2.png');
+    background-size: 100%;
 }
 
 #page3 {
-    background-color: #0000FF;
+    background: url('../../../assets/Main_Image_3.png');
+    background-size: 100%;
 }
 
 #page4 {
-    background-color: #FFFF00;
+    background: url('../../../assets/Main_Image_4.png');
+    background-size: 100%;
 }
 
 #page5 {
-    background-color: #FF00FF;
-}
-
-#page6 .DownBtn {
-    display: none; 
+    background: url('../../../assets/Main_Image_5.png');
+    background-size: 100%;
 }

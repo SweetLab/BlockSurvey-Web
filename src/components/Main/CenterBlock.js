@@ -9,7 +9,6 @@ class Center_Block extends Component {
     render() { 
         return ( 
             <div>
-
             </div>
          );
     }

@@ -11,7 +11,6 @@ import MaindefaultLayout from '../../components/Main/MaindefaultLayout'
 class Main extends Component {
   render() { 
     return (
-      
       <div>
           <ReactFullpage {...this.props.ReactFullpage} render={() => {
             return (

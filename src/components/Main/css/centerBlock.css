@@ -1,0 +1,28 @@
+.Center_Position_Text {
+    text-align: center;
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -10vh;
+    margin-left: -15vw; 
+  
+}
+
+.Main_Text {
+    font-size: 3em;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.Sub_Text {
+    font-size: 1.9em;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    color: white;
+    display: block;
+}

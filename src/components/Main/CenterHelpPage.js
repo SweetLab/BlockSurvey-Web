@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../components/Main/css/centerHelpPage.css';
+import './css/centerHelpPage.css';
 
 class Center_HelpPage extends Component {
     constructor(props) {

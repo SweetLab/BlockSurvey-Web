@@ -13,16 +13,19 @@
 .Main_Text {
     font-size: 3em;
     font-family: 'Roboto';
-    font-weight: 600;
+    font-weight: 900;
     color: white;
     display: block;
     margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: 6.4px;
 }
 
 .Sub_Text {
     font-size: 1.9em;
     font-family: 'Roboto';
     font-weight: lighter;
-    color: white;
+    color: #ffffff;
     display: block;
+    line-height: 1.5;
 }

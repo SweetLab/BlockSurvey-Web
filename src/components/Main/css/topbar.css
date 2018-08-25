@@ -6,11 +6,9 @@
 
 .Logo {
     position: absolute;
-    width: 5vw;
-    height: 5vw;
-    background-color: white;
+    width: 75px;
     display: inline-block;
-    margin: 1vw;
+    margin: 40px;
 }
 
 .Logo img {

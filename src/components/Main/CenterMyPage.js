@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../components/Main/css/centerMyPage.css';
+import './css/centerMyPage.css';
 
 class Center_PageHelp extends Component {
     constructor(props) {

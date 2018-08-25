@@ -12,11 +12,11 @@
     text-align: center;
     position: relative;
     top: 50%;
-    margin-top: -3em;
+    margin-top: -112px;
 }
 
 .Main_Text {
-    font-size: 2.6em;
+    font-size: 64px;
     font-family: 'Roboto';
     font-weight: 900;
     color: white;
@@ -26,24 +26,9 @@
 }
 
 .Sub_Text {
-    font-size: 1.9em;
+    font-size: 48px;
     font-family: 'Roboto';
     font-weight: lighter;
     color: #ffffff;
     line-height: 1.5;
-}
-
-@media (min-width: 1960px) {
-    .Center_Text {
-        margin-top: -5em;
-    }
-
-    .Main_Text {
-        font-size: 4em;
-
-    } 
-    
-    .Sub_Text {
-        font-size: 2.9em;
-    }
 }

@@ -1,4 +1,3 @@
-import BottomBtn from './downBtn.png';
 import Logo from './Logo.png';
 import LogoWhite from './LogoWhite.png';
 import menuBtn from './menuBtn.png';
@@ -9,7 +8,6 @@ import MainBackGround4 from './Main_Image_4.png';
 import MainBackGround5 from './Main_Image_5.png';
 
 export {
-  BottomBtn,
   Logo,
   LogoWhite,
   menuBtn,

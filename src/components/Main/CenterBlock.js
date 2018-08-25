@@ -9,8 +9,10 @@ class Center_Block extends Component {
     render() {
         return (
             <div className="Center_Position_Text">
-                <div className="Main_Text">BlockSurvey</div>
-                <div className="Sub_Text">Safe and transparent</div>
+                <div className="Center_Text">
+                    <div className="Main_Text">BlockSurvey</div>
+                    <div className="Sub_Text">Safe and transparent</div>
+                </div>
             </div>
          );
     }

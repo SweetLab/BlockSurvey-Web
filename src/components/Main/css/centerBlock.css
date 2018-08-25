@@ -1,5 +1,4 @@
 .Center_Position_Text {
-    text-align: center;
     width: 30vw;
     height: 20vh;
     position: absolute;
@@ -7,15 +6,20 @@
     top: 50%;
     margin-top: -10vh;
     margin-left: -15vw; 
-  
+}
+
+.Center_Text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    margin-top: -3em;
 }
 
 .Main_Text {
-    font-size: 3em;
+    font-size: 2.6em;
     font-family: 'Roboto';
     font-weight: 900;
     color: white;
-    display: block;
     margin-bottom: 20px;
     line-height: 1.2;
     letter-spacing: 6.4px;
@@ -26,6 +30,20 @@
     font-family: 'Roboto';
     font-weight: lighter;
     color: #ffffff;
-    display: block;
     line-height: 1.5;
+}
+
+@media (min-width: 1960px) {
+    .Center_Text {
+        margin-top: -5em;
+    }
+
+    .Main_Text {
+        font-size: 4em;
+
+    } 
+    
+    .Sub_Text {
+        font-size: 2.9em;
+    }
 }

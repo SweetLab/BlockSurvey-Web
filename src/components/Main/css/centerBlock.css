@@ -1,11 +1,5 @@
-.Center_Position_Text {
-    width: 30vw;
-    height: 20vh;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -10vh;
-    margin-left: -15vw; 
+.Center_Position_Text{
+  margin-top: 175px;
 }
 
 .Center_Text {

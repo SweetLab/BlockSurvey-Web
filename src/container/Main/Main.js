@@ -7,11 +7,15 @@ import CenterContact from '../../components/Main/CenterContact';
 import ReactFullpage from '@fullpage/react-fullpage';
 import '../../components/Main/css/viewpage.css';
 import MaindefaultLayout from '../../components/Main/MaindefaultLayout'
+import Navi from '../../components/Main/Navi'
+import TopBar from '../../components/Main/TopBar'
 
 class Main extends Component {
   render() { 
     return (
       <div>
+        <Navi/>
+        <TopBar />
           <ReactFullpage {...this.props.ReactFullpage} render={() => {
             return (
               <div className="View_Main_Page">

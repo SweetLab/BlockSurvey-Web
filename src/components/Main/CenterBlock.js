@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/centerBlock.css';
 
-class Center_Block extends Component {
+class CenterBlock extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -18,4 +18,4 @@ class Center_Block extends Component {
     }
 }
  
-export default Center_Block;
+export default CenterBlock;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/centerSurvey.css';
 
-class Center_Survey extends Component {
+class CenterSurvey extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -15,4 +15,4 @@ class Center_Survey extends Component {
     }
 }
  
-export default Center_Survey;
+export default CenterSurvey;

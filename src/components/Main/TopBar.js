@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Menu from '../../assets/menuBtn.png';
 import './css/topbar.css'
-import {LogoWhite, Logo} from '../../assets/assets'
+import {Logo} from '../../assets/assets'
 
 class TopBar extends Component {
     constructor(props) {

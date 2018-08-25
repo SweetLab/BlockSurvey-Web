@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/centerContact.css';
 
-class Center_Contact extends Component {
+class CenterContact extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -15,4 +15,4 @@ class Center_Contact extends Component {
     }
 }
  
-export default Center_Contact;
+export default CenterContact;

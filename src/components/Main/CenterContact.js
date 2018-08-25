@@ -2,14 +2,18 @@ import React, { Component } from 'react';
 import './css/centerContact.css';
 
 class CenterContact extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
     render() { 
         return ( 
-            <div>
-
+            <div className="BlockContact">
+                <div className="Contact_title">
+                    Contact Us
+                </div>
+                <div className="Contact_msg">
+                    Thank you for visiting <span>BlockSurvey</span>
+                </div>
+                <div className="Contact_btn">
+                    Contact
+                </div>
             </div>
          );
     }

@@ -1,0 +1,19 @@
+.Center_Position_Text{
+  text-align: center;
+  font-family: 'Roboto';
+  color: #FFF;
+}
+
+.Center_Position_Text .Main_Text{
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 6.4px;
+}
+
+.Center_Position_Text .Sub_Text{
+  font-size: 48px;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #ffffff;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../components/Main/css/centerBlock.css';
+import './css/centerBlock.css';
 
 class Center_Block extends Component {
     constructor(props) {
@@ -9,8 +9,8 @@ class Center_Block extends Component {
     render() {
         return (
             <div className="Center_Position_Text">
-                <span className="Main_Text">BlockSurvey</span>
-                <span className="Sub_Text">Safe and transparent</span>
+                <div className="Main_Text">BlockSurvey</div>
+                <div className="Sub_Text">Safe and transparent</div>
             </div>
          );
     }

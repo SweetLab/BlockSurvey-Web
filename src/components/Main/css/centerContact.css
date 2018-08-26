@@ -12,17 +12,17 @@
 }
 
 .BlockContact .Contact_msg{
-  opacity: 0.75;
   margin-top: 36px;
   font-size: 48px;
   font-weight: 100;
 }
 
 .BlockContact .Contact_msg span{
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .BlockContact .Contact_btn{
+  position: relative;
   width: 337px;
   height: 68px;
   border: #FFF solid 1px;
@@ -36,21 +36,17 @@
   font-weight: 100;
   line-height: 2;
   letter-spacing: 1.7px;
+  transition:background-color 0.4s, transform 0.4s;
 }
 
 .BlockContact .Contact_btn:hover{
   background-color: #FFF;
   color: #000;
-  animation: btnAnimation 0.4s;
 }
 
-@keyframes btnAnimation{
-  from{
-    background-color: transparent;
-    color: #FFF;
-  }
-  to{
-    background-color: #FFF;
-    color: #000;
-  }
+.BlockContact .Contact_btn .btn_arrow{
+  position: absolute;
+  right: 36px;
+  font-size: 30px;
+  line-height: 72px;
 }

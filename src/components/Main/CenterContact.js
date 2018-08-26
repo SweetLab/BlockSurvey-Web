@@ -12,7 +12,7 @@ class CenterContact extends Component {
                     Thank you for visiting <span>BlockSurvey</span>
                 </div>
                 <div className="Contact_btn">
-                    Contact
+                    Contact <span className="btn_arrow">➔</span>
                 </div>
             </div>
          );

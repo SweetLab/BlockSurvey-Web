@@ -47,6 +47,7 @@
     letter-spacing: 5.6px;
     color: #ffffff;
     margin-left: 48px;
+    cursor: pointer;
 }.content-nav-text-2-on {
     font-family: 'Roboto';
     font-size: 56px;
@@ -55,6 +56,7 @@
     letter-spacing: 5.6px;
     color: #ffffff;
     margin-left: 48px;
+    cursor: pointer;
 }.content-nav-text-3-on {
     font-family: 'Roboto';
     font-size: 56px;
@@ -63,6 +65,7 @@
     letter-spacing: 5.6px;
     color: #ffffff;
     margin-left: 48px;
+    cursor: pointer;
 }.content-nav-text-4-on {
     font-family: 'Roboto';
     font-size: 56px;
@@ -71,6 +74,7 @@
     letter-spacing: 5.6px;
     color: #ffffff;
     margin-left: 48px;
+    cursor: pointer;
 }.content-nav-text-5-on {
     font-family: 'Roboto';
     font-size: 56px;
@@ -79,6 +83,7 @@
     letter-spacing: 5.6px;
     color: #ffffff;
     margin-left: 48px;
+    cursor: pointer;
 }
 .content-nav-text-off {
     font-family: 'Roboto';
@@ -89,6 +94,7 @@
     color: #ffffff;
     opacity: 0.4;
     margin-left: 48px;
+    cursor: pointer;
 }
 
 .content-circle-1-on {

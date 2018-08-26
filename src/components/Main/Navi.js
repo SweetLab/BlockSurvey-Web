@@ -9,14 +9,15 @@ class Navi extends Component {
             </div>
          );
     }
+
     NaviContent() {
         const { content } = this.props
         return content.map(item => (
             <div className="content">
-                <div className={`content-nav-${item.contentState}-on`}>
-                    <span className="content-nav-text">{item.ContentTitle}</span>
+                <div id={`Navi_id_${item.contentNumber}`} className={`content-nav-off`}>
+                    <span id={`Navi_Text_${item.contentNumber}`} className={`content-nav-text-off`}>{item.contentTitle}</span>
                 </div>
-                <div className="content-circle"></div>
+                <div id={`Navi_circle_${item.contentNumber}`} className="content-circle-off"></div>
             </div>
         ))
     }

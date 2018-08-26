@@ -7,7 +7,6 @@ class MaindefaultLayout extends Component {
       <div className="section" id={`page${pageId}`}>
         {this.props.children}
       </div>
-        
     );
   }
 }

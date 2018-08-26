@@ -3,7 +3,7 @@
   color: #ffffff;
   text-align: center;
 }
-.BlockContact .Contact_title{
+.Block_title{
   font-family: Roboto;
   font-size: 56px;
   font-weight: 900;
@@ -11,18 +11,18 @@
   letter-spacing: 5.6px;
 }
 
-.BlockContact .Contact_msg{
-  opacity: 0.75;
+.Block_msg{
   margin-top: 36px;
   font-size: 48px;
   font-weight: 100;
 }
 
-.BlockContact .Contact_msg span{
-  font-weight: 700;
+.Block_msg span{
+  font-weight: 500;
 }
 
-.BlockContact .Contact_btn{
+.Block_btn{
+  position: relative;
   width: 337px;
   height: 68px;
   border: #FFF solid 1px;
@@ -36,21 +36,18 @@
   font-weight: 100;
   line-height: 2;
   letter-spacing: 1.7px;
+  transition:background-color 0.4s, transform 0.4s;
+  cursor: pointer;
 }
 
-.BlockContact .Contact_btn:hover{
+.Block_btn:hover{
   background-color: #FFF;
   color: #000;
-  animation: btnAnimation 0.4s;
 }
 
-@keyframes btnAnimation{
-  from{
-    background-color: transparent;
-    color: #FFF;
-  }
-  to{
-    background-color: #FFF;
-    color: #000;
-  }
+.Block_btn .btn_arrow{
+  position: absolute;
+  right: 36px;
+  font-size: 30px;
+  line-height: 72px;
 }

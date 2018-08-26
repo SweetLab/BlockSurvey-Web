@@ -5,14 +5,14 @@ class CenterContact extends Component {
     render() { 
         return ( 
             <div className="BlockContact">
-                <div className="Contact_title">
+                <div className="Block_title">
                     Contact Us
                 </div>
-                <div className="Contact_msg">
+                <div className="Block_msg">
                     Thank you for visiting <span>BlockSurvey</span>
                 </div>
-                <div className="Contact_btn">
-                    Contact
+                <div className="Block_btn">
+                    Contact <span className="btn_arrow">➔</span>
                 </div>
             </div>
          );

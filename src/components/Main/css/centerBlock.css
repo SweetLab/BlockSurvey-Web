@@ -2,14 +2,14 @@
   margin-top: 175px;
 }
 
-.Center_Text {
+.Center_Position_Text .Center_Text {
     text-align: center;
     position: relative;
     top: 50%;
     margin-top: -112px;
 }
 
-.Main_Text {
+.Center_Position_Text .Main_Text {
     font-size: 64px;
     font-family: 'Roboto';
     font-weight: 900;
@@ -19,7 +19,7 @@
     letter-spacing: 6.4px;
 }
 
-.Sub_Text {
+.Center_Position_Text .Sub_Text {
     font-size: 48px;
     font-family: 'Roboto';
     font-weight: lighter;

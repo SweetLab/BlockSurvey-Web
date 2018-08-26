@@ -1,6 +1,6 @@
-let onChangeMain = () => {
-    let MainClass = document.getElementById(`MainBody`).className
-    
+const onChangeMain = () => {    
+    const MainClass = document.getElementById(`MainBody`).className
+
     if(MainClass === `fp-viewing-0`) {
         document.getElementById(`Navi_id_1`).className = `content-nav-1-on`
         document.getElementById(`Navi_Text_1`).className = `content-nav-text-1-on` 
@@ -28,4 +28,8 @@ let onChangeMain = () => {
     }
 }
 
-export { onChangeMain };
+const locationNavi = () => {
+    
+}
+
+export { onChangeMain, locationNavi };

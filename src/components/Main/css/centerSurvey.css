@@ -47,7 +47,7 @@
     letter-spacing: 4.8px;
   }
 
-.BlockSurvey .Contact_btn_1 {
+.BlockSurvey .Survey_btn_1 .Block_btn {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -67,14 +67,8 @@
     letter-spacing: 1.7px;
     color: #ffffff
 }
-      
-.BlockSurvey .Contact_btn_1:hover{
-    background-color: #FFF;
-    color: #000;
-    animation: btnAnimation 0.4s;
-  }
   
-  .BlockSurvey .Contact_btn_2 {
+  .BlockSurvey .Survey_btn_2 .Block_btn {
     position: absolute;
     right: 0;
     top: 0;
@@ -95,12 +89,19 @@
     color: #ffffff
 }
       
-.BlockSurvey .Contact_btn_2:hover{
+.BlockSurvey .Block_btn:hover{
     background-color: #FFF;
     color: #000;
     animation: btnAnimation 0.4s;
   }
 
+  .Block_btn .btn_arrow{
+    color: #ffffff;
+    position: absolute;
+    right: 36px;
+    font-size: 30px;
+    line-height: 72px;
+  }
   @keyframes btnAnimation{
     from{
       background-color: transparent;

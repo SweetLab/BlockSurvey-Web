@@ -15,9 +15,11 @@ class CenterHelpPage extends Component {
                 <div className="Block_msg">
                     Something get wrong?
                 </div>
-                <div className="Block_btn">
-                    We can Help <span className="btn_arrow">➔</span>
-                </div>
+                <a href="mailto:bgm537@saybgm.me">
+                    <div className="Block_btn">
+                        We can Help <span className="btn_arrow">➔</span>
+                    </div>
+                </a>
             </div>
          );
     }

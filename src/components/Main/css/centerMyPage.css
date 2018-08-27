@@ -1,0 +1,12 @@
+.Mypage{
+  position: absolute;
+  top: 30%;
+  right: 23%;
+  text-align: right;
+  color: #FFF;
+}
+
+.Mypage .Block_btn{
+  position: absolute;
+  right: 0;
+}

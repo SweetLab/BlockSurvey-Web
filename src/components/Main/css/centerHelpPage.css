@@ -5,3 +5,12 @@
   text-align: right;
   color: #FFF;
 }
+
+.BlockHelp .Block_btn{
+  position: absolute;
+  right: 0;
+}
+
+a:link{
+  text-decoration: none;
+}

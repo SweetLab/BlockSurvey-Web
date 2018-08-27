@@ -38,6 +38,7 @@
   letter-spacing: 1.7px;
   transition:background-color 0.4s, transform 0.4s;
   cursor: pointer;
+  color: #FFF;
 }
 
 .Block_btn:hover{

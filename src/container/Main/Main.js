@@ -9,44 +9,11 @@ import '../../components/Main/css/viewpage.css'
 import MaindefaultLayout from '../../components/Main/MaindefaultLayout'
 import Navi from '../../components/Main/Navi'
 import TopBar from '../../components/Main/TopBar'
-import { onChangeMain } from '../../core/ScrollEvent'
 
 class Main extends Component {
-  state = {
-    content : [
-      {
-        contentTitle : `B`,
-        contentNumber : `1`
-      },
-      {
-        contentTitle : `S`,
-        contentNumber : `2`
-      },
-      {
-        contentTitle : `M`,
-        contentNumber : `3`
-      },
-      {
-        contentTitle : `H`,
-        contentNumber : `4`
-      },
-      {
-        contentTitle : `C`,
-        contentNumber : `5`
-      }
-    ]
-  }
-
-  componentDidMount() {
-    onChangeMain()
-  }
-
   render() { 
     return (
       <div>
-        <Navi
-          content={this.state.content}
-         /> 
         <TopBar />
           <ReactFullpage {...this.props.ReactFullpage} render={() => {
             return (

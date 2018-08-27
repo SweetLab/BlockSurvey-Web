@@ -4,8 +4,8 @@
 
 .Participate_wrapper{
   position: absolute;
-  top: 25%;
-  left: 20%;
+  top: 30%;
+  left: 15%;
 }
 
 .Participate_wrapper .Block_title{
@@ -19,7 +19,7 @@
 
 .Make_wrapper{
   position: absolute;
-  top: 15%;
+  top: 20%;
   right: 15%;
 }
 

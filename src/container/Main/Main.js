@@ -1,13 +1,8 @@
 import React, { Component } from 'react'
-import CenterBlock from '../../components/Main/CenterBlock'
-import CenterSurvey from '../../components/Main/CenterSurvey'
-import CenterMyPage from '../../components/Main/CenterMyPage'
-import CenterHelpPage from '../../components/Main/CenterHelpPage'
-import CenterContact from '../../components/Main/CenterContact'
+import { CenterBlock, CenterSurvey, CenterMyPage, CenterHelpPage, CenterContact } from './../../components/Main/index';
 import ReactFullpage from '@fullpage/react-fullpage'
 import '../../components/Main/css/viewpage.css'
 import MaindefaultLayout from '../../components/Main/MaindefaultLayout'
-import Navi from '../../components/Main/Navi'
 import TopBar from '../../components/Main/TopBar'
 
 class Main extends Component {

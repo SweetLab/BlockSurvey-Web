@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/centerMyPage.css';
 
-class CenterPageHelp extends Component {
+class CenterMyPage extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -15,4 +15,4 @@ class CenterPageHelp extends Component {
     }
 }
  
-export default CenterPageHelp;
+export default CenterMyPage;

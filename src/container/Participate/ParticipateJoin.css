@@ -1,0 +1,39 @@
+.Participate_Join {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.Participate_Join .Topbar {
+    width: 100%;
+    height: 81px;
+}
+
+.Participate_Join .Topbar .Logo {
+    width: 81px;
+    height: 81px;
+    display: inline-block;
+}
+
+.Participate_Join .TopBtns {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.Participate_Join .TopBtns .MenuBtn {
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+}
+
+.Participate_Join .TopBtns .Down_Arrow {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+.Participate_Join .TopBtns .Down_Arrow img {
+    width: 100%;
+    height: 100%;
+}

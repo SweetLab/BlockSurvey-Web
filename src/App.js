@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import {Main, Participate, MyPage} from './container/index';
 import {Main, Participate, MyPage, CreateSurvey} from './container/index';
 
 class App  extends Component {

@@ -1,15 +1,22 @@
 .Main_Header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 999;
 }
 
+<<<<<<< HEAD
 .Main_Header .Logo {
     position: absolute;
     width: 4vw;
+=======
+.Logo {
+    position: fixed;
+    width: 75px;
+>>>>>>> b8c3458e7a642193b505bdd1562459a0c52be674
     display: inline-block;
     margin: 1vw;
+    cursor: pointer;
 }
 
 .Main_Header .Logo img {
@@ -17,16 +24,39 @@
     height: 100%;
 }
 
+<<<<<<< HEAD
 .Main_Header .MenuBtn {
     position: absolute;
     right: 0;
     width: 3.6vw;
     height: 3.6vw;
+=======
+.MenuBtn {
+    position: fixed;
+    top: 1.5vw;
+    right: 1.5vw;
+    height: 75px;
+>>>>>>> b8c3458e7a642193b505bdd1562459a0c52be674
     display: inline-block;
-    margin: 1.5vw;
+    cursor: pointer;
 }
 
 .Main_Header .MenuBtn img {
     width: 100%;
     height: 100%;
+}
+
+.MenuBtn .Loginbtn{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    margin-right: 65px;
+    position: relative;
+    top: -30.5px;
+    font-size: 32px;
+    color: #FFF;
+}
+
+.MenuBtn .Loginbtn i{
+    margin-right: 8px;
 }

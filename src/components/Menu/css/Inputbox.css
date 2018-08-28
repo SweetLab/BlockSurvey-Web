@@ -1,0 +1,33 @@
+.Inputbox{
+  position: relative;
+  font-family: 'Roboto';
+  color: #FFF;
+  padding: 34px 0;
+}
+
+.Inputbox .Input-title{
+  position: absolute;
+  padding: 0 15px;
+  font-size: 36px;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: #707070;
+  top: 10px;
+  left: 35px;
+}
+
+.Inputbox input{
+  background-color: transparent;
+  width: 453px;
+  height: 65px;
+  border-radius: 100px;
+  border: solid 6px #ffffff;
+  font-size: 35px;
+  padding-left: 35px;
+  color: #FFF;
+  font-family: 'Roboto';
+}
+
+.Inputbox input:focus{
+  outline: none;
+}

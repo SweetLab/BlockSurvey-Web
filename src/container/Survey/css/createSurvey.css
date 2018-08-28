@@ -1,0 +1,148 @@
+#create-survey-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#create-survey-header-section {
+  width: 100%;
+  height: 75px;
+  background-color: #419cea;
+}
+
+#create-survey-body-section {
+  width: calc(100% - 80px);
+  margin: 0 40px;
+}
+
+#survey-card-section {
+  width: 100%;
+}
+
+.survey-card-wrapper {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.survey-card-wrapper:hover {
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.16);
+}
+
+.survey-card-wrapper:last-child {
+  margin-bottom: 50px;
+}
+
+.survey-number {
+  position: absolute;
+  font-size: 80px;
+  opacity: 0.3;
+  font-weight: bold;
+  color: #419cea;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.survey-title {
+  display: inline-block;
+  font-weight: bold;
+  width: 100%;
+  font-size: 40px;
+  color: #419cea;  
+  text-align: center;
+  margin: 35px 0 85px 0;
+}
+
+.survey-contents {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.survey-choice-number-wrapper {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.survey-choice-number {
+  font-size: 36px;
+  color: #6e6e6e;
+  flex-grow: 1;
+}
+
+.survey-vertical-line-wrapper {
+  height: calc(100% - 40px);
+  width: 20px;
+  padding: 20px 0;
+}
+
+.survey-vertical-line {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+
+.survey-choice-text-wrapper {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.survey-choice-text {
+  font-size: 28px;
+  color: #6e6e6e;
+  flex-grow: 1;
+}
+
+#add-survey-question-btn-wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: dashed 2px #707070;
+}
+
+#add-survey-question-btn {
+  width: 200px;
+  height: 50px;
+  background-color: #419cea;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}
+
+#create-survey-btn-wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#create-survey-btn {
+  width: 200px;
+  height: 50px;
+  background-color: #419cea;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}

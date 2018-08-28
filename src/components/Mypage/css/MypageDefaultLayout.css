@@ -1,0 +1,19 @@
+.MypageDefaultLayout .Navi{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 75px;
+}
+
+.MypageDefaultLayout .Navi .Logo{
+  position: absolute;
+  left: 0;
+  height: 75px;
+}
+
+.MypageDefaultLayout .Navi .menu{
+  position: absolute;
+  right: 0;
+  width: 75px;
+  height: 75px;
+}

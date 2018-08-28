@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './css/centerBlock.css';
 
 class CenterBlock extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
     render() {
         return (
             <div className="Center_Position_Text">

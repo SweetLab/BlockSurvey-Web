@@ -1,0 +1,14 @@
+.Menu-Login .signIn {
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  color: #707070;
+  width: 100%;
+  height: 65px;
+  background-color: #FFF;
+  line-height: 65px;
+  border-radius: 75px;
+  cursor: pointer;
+  margin-top: 50px;
+}

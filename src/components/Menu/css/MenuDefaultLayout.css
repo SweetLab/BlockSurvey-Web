@@ -1,0 +1,26 @@
+.MenuDefaultLayout{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #707070;
+  z-index: 50;
+  animation: 0.5s popupAnimation;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu-contents{
+  width: 500px;
+  text-align: center;
+  color: #FFF;
+}
+
+@keyframes popupAnimation {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

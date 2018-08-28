@@ -1,3 +1,8 @@
+.Menu-Login{
+  position: relative;
+  top: -15px;
+}
+
 .Menu-Login .signIn {
   font-family: 'Roboto';
   font-size: 36px;
@@ -11,4 +16,12 @@
   border-radius: 75px;
   cursor: pointer;
   margin-top: 50px;
+}
+
+.Menu-Login .gotoSignUp{
+  position: relative;
+  top: 30px;
+  font-size: 24px;
+  color: #419cea;
+  cursor: pointer;
 }

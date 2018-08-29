@@ -131,8 +131,7 @@
 }
 
 .SurveyBox .SurveyState .SurveyBtn:hover {
-    margin-left: 52px;
-    border: 0;
+    border-color: #2fd165;
 }
 
 .SurveyBox .SurveyState .SurveyBtn .BtnText{

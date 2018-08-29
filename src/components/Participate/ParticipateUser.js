@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Survey_BlackUser, Survey_Participate_people } from '../../assets/assets'
-import './participateUser.css';
+import './css/participateUser.css';
 
 class ParticipateUser extends Component {
     render() {

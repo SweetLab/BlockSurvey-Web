@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Logo, Blackmenubtn, DownArrowBtn } from '../../assets/assets'
-import './ParticipateJoin.css';
+import './css/ParticipateJoin.css';
 
 class Participate extends Component {
     render() {

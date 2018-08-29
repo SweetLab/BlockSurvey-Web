@@ -9,6 +9,9 @@ import MainBackGround2 from './Main_Image_2.png';
 import MainBackGround3 from './Main_Image_3.png';
 import MainBackGround4 from './Main_Image_4.png';
 import MainBackGround5 from './Main_Image_5.png';
+import DownArrowBtn from './Survey_Participate_arrow.png';
+import Survey_BlackUser from './Survey_BlackUser.png';
+import Survey_Participate_people from './Survey_Participate_people.png';
 
 export {
   Logo,
@@ -21,5 +24,8 @@ export {
   MainBackGround2,
   MainBackGround3,
   MainBackGround4,
-  MainBackGround5
+  MainBackGround5,
+  DownArrowBtn,
+  Survey_BlackUser,
+  Survey_Participate_people
 };

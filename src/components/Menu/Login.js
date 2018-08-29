@@ -10,7 +10,8 @@ class Login extends Component {
   state = { 
     id: "",
     pw: "",
-    userAddr: ""
+    userAddr: "",
+    SignUp: false,
   }
   componentWillMount(){
     const web3 = new Web3(Web3.givenProvider);
@@ -26,13 +27,22 @@ class Login extends Component {
     }
   }
   render() { 
+    const {SignUp} = this.state;
     return (
       <div className="Menu-Login">
-        <Inputbox title="ID" action={(value)=>this.setState({id:value})} onPW={false}/>
-        <Inputbox title="Password" action={(value)=>this.setState({pw:value})} onPW={true}/>
-        <div className="signIn" onClick={()=>this.SignIn()}>
-          Login
-        </div>
+        {
+          SignUp ? 
+          null
+          :
+          <div>
+            <Inputbox title="ID" action={(value)=>this.setState({id:value})} onPW={false}/>
+            <Inputbox title="Password" action={(value)=>this.setState({pw:value})} onPW={true}/>
+            <div className="signIn" onClick={()=>this.SignIn()}>
+              Login
+            </div>
+            <div className="gotoSignUp" onClick={()=>this.setState({SignUp:true})}>Don't have account? Create account</div>
+          </div>
+        }
       </div>
     );
   }

@@ -1,0 +1,151 @@
+.SurveyBox  {
+    display: inline-block;
+    border-radius: 20px;
+    width: 1154px;
+    height: 110px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 36px 0 rgba(0, 0, 0, 0.08);
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    margin-left: -577px;
+    margin-top: -14%; 
+}
+
+.SurveyBox .SurveyInfor {
+    width: 788px;
+    display: inline-block;
+    margin-left: 34px; 
+}
+
+.SurveyBox .SurveyInfor .SurveyTitle {
+    width: 700px;
+    height: 37px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.57;
+    letter-spacing: 1.3px;
+    text-align: left;
+    color: #419cea;
+}
+
+.SurveyBox .SurveyInfor .SurveyUser{
+    width: 134px;
+    height: 24px;
+    opacity: 0.36;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.6;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
+}
+
+.SurveyBox .SurveyInfor .SurveyMember {
+    display: inline-block;
+    margin-left: 100px; 
+}
+
+.SurveyBox .SurveyInfor .SurveyMember .BlackUser {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    opacity: 0.48;
+}
+
+.SurveyBox .SurveyInfor .SurveyMember .UserCount {
+    width: 77px;
+    height: 19px;
+    opacity: 0.48;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 4.5;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #000000;
+}
+
+.SurveyBox .SurveyState {
+    display: inline-block;
+    width: 290px;
+    height: 110px;
+    position: relative;
+    top: -12px;
+}
+
+.SurveyBox .SurveyState .SurveyJoiner {
+    width: 64px;
+    height: 64px;
+    border: 4px solid #419cea;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: 15%;
+}
+
+.SurveyBox .SurveyState .SurveyJoiner .BlueUser {
+    width: 36px;
+    height: 36px;
+    margin-top: 8px;
+}
+
+.SurveyBox .SurveyState .SurveyJoiner .MemberCount {
+    width: 38px;
+    height: 14px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #419cea;
+    display: inline-block;
+    position: relative;
+    top: -15%;
+}
+
+.SurveyBox .SurveyState .SurveyBtn {
+    width: 145px;
+    height: 48px;
+    border-radius: 40px;
+    background-color: #2fd165;
+    display: inline-block;
+    border: #f2f2f2 12px solid;
+    cursor:pointer;
+    margin-left: 40px;
+    text-align: center;
+    position: relative;
+    top: -5%;
+
+}
+
+.SurveyBox .SurveyState .SurveyBtn:hover {
+    margin-left: 52px;
+    border: 0;
+}
+
+.SurveyBox .SurveyState .SurveyBtn .BtnText{
+    width: 50px;
+    height: 29px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #ffffff;
+    text-align: center;
+}

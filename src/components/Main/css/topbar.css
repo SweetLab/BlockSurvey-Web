@@ -5,11 +5,11 @@
     z-index: 999;
 }
 
-.Logo {
+.Main_Header .Logo {
     position: fixed;
-    width: 75px;
-    display: inline-block;
-    margin: 1vw;
+    height: 75px;
+    top: 1vw;
+    left: 1vw;
     cursor: pointer;
 }
 

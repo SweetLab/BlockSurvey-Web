@@ -5,6 +5,7 @@ import './css/participateUser.css';
 class ParticipateUser extends Component {
     render() {
         return (
+            <div className="Survey_ParticipateUser">
                 <div className="SurveyBox">
                     <div className="SurveyInfor">
                         <div className="SurveyTitle">
@@ -26,6 +27,7 @@ class ParticipateUser extends Component {
                             </div>
                     </div>
                 </div>
+            </div>               
         );
     }
 }

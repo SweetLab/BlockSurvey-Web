@@ -5,7 +5,6 @@ import './participateUser.css';
 class ParticipateUser extends Component {
     render() {
         return (
-            <div className="Bg_BlockBox">
                 <div className="SurveyBox">
                     <div className="SurveyInfor">
                         <div className="SurveyTitle">
@@ -27,7 +26,6 @@ class ParticipateUser extends Component {
                             </div>
                     </div>
                 </div>
-            </div>
         );
     }
 }

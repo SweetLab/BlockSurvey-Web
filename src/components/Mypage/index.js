@@ -1,6 +1,6 @@
-import Navi from './Navi';
+import MypageNavi from './MypageNavi';
 import MypageDefaultLayout from './MypageDefaultLayout'
-import TopBar from './TopBar'
-import Main from './Main'
+import MypageTopBar from './MypageTopBar'
+import MypageMain from './MypageMain'
 
-export { Navi, Main, MypageDefaultLayout, TopBar };
+export { MypageNavi, MypageMain, MypageDefaultLayout, MypageTopBar };

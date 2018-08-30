@@ -4,6 +4,7 @@ import './css/navi.css'
 import {Logo, menuBtn, menuXbtn} from '../../assets/assets'
 import MenuDefaultLayout from '../Menu/MenuDefaultLayout'
 import Login from '../Menu/Login'
+import MenuSet from '../Menu/MenuSet'
 
 class Navi extends Component {
     constructor(props) {
@@ -39,6 +40,7 @@ class Navi extends Component {
                     </div>
                 </header>
                 { onLogin ? <MenuDefaultLayout><Login/></MenuDefaultLayout>: null}
+                { this.state.onMenu ?  <MenuDefaultLayout><MenuSet /></MenuDefaultLayout>: null}
             </Fragment>
          );
     }

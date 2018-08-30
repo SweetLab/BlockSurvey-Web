@@ -53,11 +53,11 @@ class SignUp extends Component {
                 "id": id,
                 "password":pw,
                 "email": email,
-                "walletAddress":address
+                "walletAddr":address
               }
               }).then((res)=> {
               if(res.status === 200){
-                return (<Redirect to="/"/>)
+                return (window.location.reload(true))
               } else {
                 ToastUtils.showErrorToast("서버에서 오류가 일어났습니다. 나중에 다시 보내주세요");
               }

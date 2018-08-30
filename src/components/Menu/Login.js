@@ -52,22 +52,23 @@ class Login extends Component {
     axios.post("http://35.200.68.244:8080/signin", {
       "id": id,
       "password":pw,
-      "walletAddress": userAddr,
+      "walletAddr": userAddr,
     }).then(res=> {
       switch(res.status){
         case 200:
           cookie.save("Token",res.data);
+          window.location.reload(true);
           break;
         case 400:
-          ToastUtils.showWarningToast("아이디 또는 비밀번호가 잘못되었습니다.<br/> 확인 후 다시 로그인해주세요.");
+        alert("아이디 또는 비밀번호가 잘못되었습니다.<br/> 확인 후 다시 로그인해주세요.");
           this.setState({id:'', pw:''});
           break;
         case 401:
-          ToastUtils.showWarningToast("인증되지 않은 지갑주소입니다.<br/> 회원가입시 등록된 지갑주소로 다시 로그인해주세요.");
+          alert("인증되지 않은 지갑주소입니다.<br/> 회원가입시 등록된 지갑주소로 다시 로그인해주세요.");
           this.setState({id:'', pw:''});
           break;
         case 404:
-          ToastUtils.showWarningToast("서버와 통신이 불안정합니다. 다시 한번 시도해주세요.");
+        alert("서버와 통신이 불안정합니다. 다시 한번 시도해주세요.");
           break;
         default:
           return;

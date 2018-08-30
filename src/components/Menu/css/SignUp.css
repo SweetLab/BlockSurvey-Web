@@ -1,0 +1,79 @@
+#SignUpAccept[type=checkbox] {
+	display: none;
+}
+
+.checkbox {
+	margin-right: 5px;
+	height: 24px;
+	width: 24px;
+	background-color: transparent;
+	border: 4px solid #FFF;
+	border-radius: 5px;
+	position: relative;
+	top: 3px;
+	display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.checkbox::before, .checkbox::after {
+	box-sizing: border-box;
+	position: absolute;
+	height: 0;
+	width: 2px;
+	background-color: #FFF;
+	display: inline-block;
+	transform-origin: left top;
+	border-radius: 1px;
+	content: ' ';
+	transition: opacity ease 0.5;
+}
+
+.checkbox::before {
+	top: 12px;
+	left: 8px;
+	transform: rotate(-140deg);
+}
+
+.checkbox::after {
+	top: 3px;
+	left: -1px;
+	transform: rotate(-45deg);
+}
+
+#SignUpAccept:checked + .checkbox, .checkbox.checked {
+	background-color: transparent;
+	border-color: #FFF;
+}
+
+#SignUpAccept:checked + .checkbox::after, .checkbox.checked::after {
+	height: 12px;
+	width: 3px;
+}
+
+#SignUpAccept:checked + .checkbox::before, .checkbox.checked::before {
+	height: 24px;
+	width: 3px;
+}
+
+.AcceptContents{
+  position: relative;
+  top: -3px;
+  left: 3px;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.SignUp-btn{
+  width: 100%;
+  height: 65px;
+  border-radius: 32px;
+  background-color: #FFF;
+  color: #707070;
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 65px;
+  text-align: center;
+  margin-top: 25px;
+  cursor: pointer;
+}

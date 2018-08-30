@@ -1,19 +1,29 @@
-.MypageDefaultLayout .Navi{
+.MypageDefaultLayout {
+  font-family: 'Roboto';
+}
+
+.MypageDefaultLayout .Title {
   width: 100%;
-  position: absolute;
-  top: 0;
-  height: 75px;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
 }
 
-.MypageDefaultLayout .Navi .Logo{
-  position: absolute;
-  left: 0;
-  height: 75px;
+.MypageDefaultLayout .Title .TitleText {
+  width: 188px;
+  height: 100%;
+  display: block;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 100px;
+  text-align: left;
+  color: #444444;
+  margin-left: 48px;
 }
 
-.MypageDefaultLayout .Navi .menu{
-  position: absolute;
-  right: 0;
-  width: 75px;
-  height: 75px;
+.Add {
+  width: 100%;
+  height: 0;
+  border: solid 0.5px #bebebe;
 }

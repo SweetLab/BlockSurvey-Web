@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import '../../components/Participate/css/participate.css';
-import TopBar from '../../components/Main/TopBar'
+import Navi from '../../components/Participate/Navi';
 import { ParticipateJoin, ParticipateUser } from '../../components/Participate'
 
 class Participate extends Component {
   render() { 
     return (
       <div className="Participate">
-        <TopBar />
+        <Navi />
         <div className="Participate_Main">
           <div className="Participate_Text">
             <div className="Survie_Part_title">Survey</div>

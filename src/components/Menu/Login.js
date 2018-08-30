@@ -5,13 +5,14 @@ import Inputbox from './Inputbox';
 import Web3 from 'web3';
 import axios from 'axios';
 import './css/Login.css';
+import SignUp from './SignUp'
 
 class Login extends Component {
   state = { 
     id: "",
     pw: "",
     userAddr: "",
-    SignUp: false,
+    isSignUp: false,
   }
   componentWillMount(){
     const web3 = new Web3(Web3.givenProvider);
@@ -27,12 +28,12 @@ class Login extends Component {
     }
   }
   render() { 
-    const {SignUp} = this.state;
+    const {isSignUp} = this.state;
     return (
       <div className="Menu-Login">
         {
-          SignUp ? 
-          null
+          isSignUp ? 
+          <SignUp address={this.state.userAddr}/>
           :
           <div>
             <Inputbox title="ID" action={(value)=>this.setState({id:value})} onPW={false}/>
@@ -40,7 +41,7 @@ class Login extends Component {
             <div className="signIn" onClick={()=>this.SignIn()}>
               Login
             </div>
-            <div className="gotoSignUp" onClick={()=>this.setState({SignUp:true})}>Don't have account? Create account</div>
+            <div className="gotoSignUp" onClick={()=>this.setState({isSignUp:true})}>Don't have account? Create account</div>
           </div>
         }
       </div>

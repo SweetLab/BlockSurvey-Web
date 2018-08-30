@@ -13,7 +13,7 @@ class Main extends Component {
           <ReactFullpage {...this.props.ReactFullpage} render={() => {
             return (
               <div className="View_Main_Page">
-                  <MaindefaultLayout pageId={1}>
+                  <MaindefaultLayout pageId = {1}>
                     <CenterBlock/>
                   </MaindefaultLayout>
                   <MaindefaultLayout pageId={2}>

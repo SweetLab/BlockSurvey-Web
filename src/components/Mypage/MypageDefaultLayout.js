@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TopBar, Navi } from './index';
+import { MypageTopBar, MypageNavi, MypageMain } from './index';
 import './css/MypageDefaultLayout.css';
 
 class MypageDefaultLayout extends Component {
@@ -12,12 +12,13 @@ class MypageDefaultLayout extends Component {
   render() { 
     return (
       <div className="MypageDefaultLayout">
-        <TopBar />
+        <MypageTopBar />
         <div className="Title">
           <span className="TitleText">My Account</span>
         </div>
         <div className="Add"></div>
-        <Navi />
+        <MypageNavi />
+        <MypageMain />
       </div>
     );
   }

@@ -1,0 +1,115 @@
+.MypageMain {
+    width: 725px;
+    height: 500px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -362.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MypageMain .header {
+    width: 100%;
+    height: 48px;
+    background-color: #2fd165;
+    display: flex;
+}
+
+.MypageMain .header .UserData {
+    width: 111px;
+    height: 100%;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 19px;
+}
+
+.MypageMain .LoginDetails {
+    width: 100%;
+    height: 343px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; 
+}
+
+.MypageMain .LoginDetails .MainTitle {
+    width: 203px;
+    height: 43px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.19;
+    text-align: left;
+    color: #444444;
+    margin-bottom: 34px;
+}
+
+.MypageMain .LoginDetails .LoginMain {
+    width: 100%;
+    height: 266px;
+    background-color: #ffffff;
+    border: solid 0.5px #707070;
+    position: relative;
+}
+
+.MypageMain .LoginDetails .LoginMain .LoginData {
+    width: 629px;
+    height: 170px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -315.5px;
+    margin-top: -85px;
+}
+
+.MypageMain .LoginDetails .LoginMain .LoginData .Slide {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.MypageMain .LoginDetails .LoginMain .LoginData .Slide .Contents {
+    width: 100%;
+    height: 48px;
+}
+
+.MypageMain .LoginDetails .LoginMain .LoginData .Slide .Contents .Title {
+    height: 19px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    text-align: left;
+    color: #727272;
+    margin-bottom: 10px;
+}
+
+.MypageMain .LoginDetails .LoginMain .LoginData .Slide .Contents .UserText {
+    height: 19px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    text-align: left;
+    color: #444444;
+}
+
+.MypageMain .LoginDetails .LoginMain .LoginData .Slide .Contents .Edit{
+    width: 20px;
+    height: 14px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.17;
+    text-align: left;
+    color: #0067dc;
+    cursor:pointer;
+    margin-left: 24px;
+}

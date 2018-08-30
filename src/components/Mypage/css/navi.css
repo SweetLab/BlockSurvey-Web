@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.MypageNavi .Content {
+.MypageNavi .Content_off {
     font-family: Roboto;
     display: block;
     height: 100%;
@@ -19,6 +19,19 @@
     cursor:pointer;
 }
 
-.MypageNavi .Content:hover {
+.MypageNavi .Content_off:hover {
     font-weight: bold;
+}
+
+.MypageNavi .Content_on {
+    font-family: Roboto;
+    display: block;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 56px;
+    color: #419cea;
+    margin-left: 48px;
+    cursor:pointer;
+    border-bottom: solid 2px #419cea;    
 }

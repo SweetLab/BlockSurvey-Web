@@ -1,0 +1,44 @@
+.MenuContents {
+    width: 504px;
+    height: 616px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -252px;
+    margin-top: -308px;
+}
+
+.MenuContents .MenuList {
+    width: 500px;
+    height: 120px;
+    border-radius: 78px;
+    border: solid 6px #FFF;
+    margin-bottom: 34px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 120px;
+    letter-spacing: 6.4px;
+    color: #FFF;
+    text-align: center;
+    transition:background-color 0.4s, transform 0.4s;
+    cursor: pointer;
+}
+
+.MenuContents .MenuList:hover{
+    background-color: #FFF;
+    color: #707070;
+}
+
+.Main_Header {
+    position: static;
+}
+
+.Main_Header .MypageMenuBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}

@@ -39,6 +39,7 @@
   transition:background-color 0.4s, transform 0.4s;
   cursor: pointer;
   color: #FFF;
+  display: inline-block;
 }
 
 .Block_btn:hover{

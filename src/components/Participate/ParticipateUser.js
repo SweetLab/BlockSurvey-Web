@@ -17,6 +17,7 @@ class ParticipateUser extends Component {
                             <span className="UserCount">1,000,000</span>
                         </div>
                     </div>
+                    <div className="filter"></div>
                     <div className="SurveyState">
                         <div className="SurveyJoiner">
                             <img className="BlueUser" src={Survey_Participate_people} alt="파란색 사람 이미지"/>

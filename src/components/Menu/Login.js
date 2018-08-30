@@ -49,14 +49,14 @@ class Login extends Component {
   }
   SignIn(){
     const {id, pw, userAddr} = this.state;
-    axios.post("localhost:2500/sigin", {
+    axios.post("http://35.200.68.244:8080/signin", {
       "id": id,
       "password":pw,
       "walletAddress": userAddr,
     }).then(res=> {
       switch(res.status){
         case 200:
-          cookie.save("Token",res.data.userSerial);
+          cookie.save("Token",res.data);
           break;
         case 400:
           ToastUtils.showWarningToast("아이디 또는 비밀번호가 잘못되었습니다.<br/> 확인 후 다시 로그인해주세요.");

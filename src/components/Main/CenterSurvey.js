@@ -9,14 +9,18 @@ class CenterSurvey extends Component {
                     <div className="Block_title">
                         <span>Participate in</span><br/> Survey
                     </div>
-                    <div className="Block_btn">
-                        Paricipate<span className="btn_arrow">➔</span>
-                    </div>
+                    <a href="/survey/participate">
+                        <div className="Block_btn">
+                            Paricipate<span className="btn_arrow">➔</span>
+                        </div>
+                    </a>
                 </div>
                 <div className="Make_wrapper">
-                    <div className="Block_btn">
-                        Make<span className="btn_arrow">➔</span>
-                    </div>
+                    <a href="/survey/create">
+                        <div className="Block_btn">
+                            Make<span className="btn_arrow">➔</span>
+                        </div>
+                    </a>
                     <div className="Block_title">
                         <span>Make</span><br/>Survey
                     </div>

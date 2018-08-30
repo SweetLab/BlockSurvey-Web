@@ -1,5 +1,4 @@
 import React, { Component,Fragment } from 'react';
-import { Link } from 'react-router-dom';
 import './css/topbar.css'
 import {Logo, menuBtn, menuXbtn} from '../../assets/assets'
 import MenuDefaultLayout from '../Menu/MenuDefaultLayout'
@@ -18,11 +17,11 @@ class TopBar extends Component {
         return (
             <Fragment>
                 <header className="Main_Header">
-                    <Link to="/">
+                    <a href="/">
                         <div className="Logo">
                             <img src={Logo} alt="로고" style={{width:"75px"}}/>
                         </div>
-                    </Link>
+                    </a>
                     
                     <div className="MenuBtn">
                         { onLogin | onMenu ? 

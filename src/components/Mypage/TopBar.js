@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './css/TopBar.css';
 
 class TopBar extends Component {
     render() {
         return (
             <div className="MypageTopbar">
-                <Link to="/">
+                <a href="/">
                     <div className="Logo"></div>
-                </Link>
+                </a>
                 <div className="filter"></div>
                 <div className="Menu"></div>
             </div>

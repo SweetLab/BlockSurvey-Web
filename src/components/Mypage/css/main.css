@@ -2,7 +2,7 @@
     width: 725px;
     height: 500px;
     position: absolute;
-    top: 58.6%;
+    top: 55%;
     left: 50%;
     margin-top: -250px;
     margin-left: -362.5px;
@@ -34,6 +34,7 @@
     height: 343px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px; 
 }
 
 .MypageMain .LoginDetails .MainTitle {

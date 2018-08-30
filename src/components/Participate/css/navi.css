@@ -1,0 +1,48 @@
+.Main_Header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.Main_Header .Logo {
+    position: fixed;
+    height: 75px;
+    top: 1vw;
+    left: 1vw;
+    cursor: pointer;
+}
+
+.Main_Header .Logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.MenuBtn {
+    position: fixed;
+    top: 1.5vw;
+    right: 1.5vw;
+    height: 75px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Main_Header .MenuBtn img {
+    width: 100%;
+    height: 100%;
+}
+
+.MenuBtn .Loginbtn{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    margin-right: 65px;
+    position: relative;
+    top: -30.5px;
+    font-size: 32px;
+    color: #FFF;
+}
+
+.MenuBtn .Loginbtn i{
+    margin-right: 8px;
+}

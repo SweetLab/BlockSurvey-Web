@@ -1,0 +1,21 @@
+.MypageTopbar {
+    height: 72px;
+    width: 100%;
+    display: flex;
+}
+
+.MypageTopbar .Logo {
+    background-image: url('../../../assets/Logo.png');
+    background-size: 72px;
+    margin-top: 7px;
+    margin-left: 7px;
+    width: 72px;
+    height: 58px;
+}
+
+.MypageTopbar .Menu {
+    background-image: url('../../../assets//Blackmenubtn.png');
+    background-size: 72px;
+    width: 72px;
+    height: 72px;
+}

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Survey_BlackUser, Survey_Participate_people } from '../../assets/assets'
-import './participateUser.css';
+import './css/participateUser.css';
 
 class ParticipateUser extends Component {
     render() {
         return (
+            <div className="Survey_ParticipateUser">
                 <div className="SurveyBox">
                     <div className="SurveyInfor">
                         <div className="SurveyTitle">
@@ -26,6 +27,7 @@ class ParticipateUser extends Component {
                             </div>
                     </div>
                 </div>
+            </div>               
         );
     }
 }

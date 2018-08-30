@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './participate.css';
+import '../../components/Participate/css/participate.css';
 import TopBar from '../../components/Main/TopBar'
-import { ParticipateJoin, ParticipateUser } from './index'
+import { ParticipateJoin, ParticipateUser } from '../../components/Participate'
 
 class Participate extends Component {
   render() { 

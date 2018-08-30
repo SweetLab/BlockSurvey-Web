@@ -1,3 +1,12 @@
+.Survey_ParticipateUser {
+    width: 1154px;
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    margin-left: -577px;
+    margin-top: -20%; 
+}
+
 .SurveyBox  {
     display: inline-block;
     border-radius: 20px;
@@ -5,11 +14,8 @@
     height: 110px;
     background-color: #ffffff;
     box-shadow: 0 3px 36px 0 rgba(0, 0, 0, 0.08);
-    position: absolute;
-    left: 50%;
-    top: 150%;
-    margin-left: -577px;
-    margin-top: -14%; 
+    position: relative;
+    margin-top: 21px;
 }
 
 .SurveyBox .SurveyInfor {
@@ -47,19 +53,19 @@
     color: #000000;
 }
 
-.SurveyBox .SurveyInfor .SurveyMember {
+.Survey_ParticipateUser .SurveyBox .SurveyInfor .SurveyMember {
     display: inline-block;
     margin-left: 100px; 
 }
 
-.SurveyBox .SurveyInfor .SurveyMember .BlackUser {
+.Survey_ParticipateUser .SurveyBox .SurveyInfor .SurveyMember .BlackUser {
     width: 24px;
     height: 24px;
     object-fit: contain;
     opacity: 0.48;
 }
 
-.SurveyBox .SurveyInfor .SurveyMember .UserCount {
+.Survey_ParticipateUser .SurveyBox .SurveyInfor .SurveyMember .UserCount {
     width: 77px;
     height: 19px;
     opacity: 0.48;
@@ -74,7 +80,7 @@
     color: #000000;
 }
 
-.SurveyBox .SurveyState {
+.Survey_ParticipateUser .SurveyBox .SurveyState {
     display: inline-block;
     width: 290px;
     height: 110px;
@@ -82,7 +88,7 @@
     top: -12px;
 }
 
-.SurveyBox .SurveyState .SurveyJoiner {
+.Survey_ParticipateUser .SurveyBox .SurveyState .SurveyJoiner {
     width: 64px;
     height: 64px;
     border: 4px solid #419cea;
@@ -93,13 +99,13 @@
     top: 15%;
 }
 
-.SurveyBox .SurveyState .SurveyJoiner .BlueUser {
+.Survey_ParticipateUser .SurveyBox .SurveyState .SurveyJoiner .BlueUser {
     width: 36px;
     height: 36px;
     margin-top: 8px;
 }
 
-.SurveyBox .SurveyState .SurveyJoiner .MemberCount {
+.Survey_ParticipateUser .SurveyBox .SurveyState .SurveyJoiner .MemberCount {
     width: 38px;
     height: 14px;
     font-family: Roboto;
@@ -115,27 +121,26 @@
     top: -15%;
 }
 
-.SurveyBox .SurveyState .SurveyBtn {
+.Survey_ParticipateUser .SurveyBox .SurveyState .SurveyBtn {
     width: 145px;
     height: 48px;
     border-radius: 40px;
     background-color: #2fd165;
     display: inline-block;
-    border: #f2f2f2 12px solid;
+    border: #e0e0e0 12px solid;
     cursor:pointer;
     margin-left: 40px;
     text-align: center;
     position: relative;
     top: -5%;
-
+    transition: 0.4s
 }
 
-.SurveyBox .SurveyState .SurveyBtn:hover {
-    margin-left: 52px;
-    border: 0;
+.Survey_ParticipateUser .SurveyBox .SurveyState .SurveyBtn:hover {
+    border-color: #ffffff;
 }
 
-.SurveyBox .SurveyState .SurveyBtn .BtnText{
+.Survey_ParticipateUser .SurveyBox .SurveyState .SurveyBtn .BtnText{
     width: 50px;
     height: 29px;
     font-family: Roboto;

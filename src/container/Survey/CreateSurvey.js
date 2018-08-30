@@ -10,7 +10,7 @@ class CreateSurvey extends Component {
         </div>
         <div id="create-survey-body-section">
           <div id="survey-card-section">
-            <div className="survey-card-wrapper">
+            <div className="survey-card-wrapper survey-card">
               <span className="survey-number">Q1</span>
               <span className="survey-title">In domitory, what food do you want?</span>
               <div className="survey-contents">
@@ -80,22 +80,29 @@ Do you want to morning exercise?</span>
                 </div>
               </div>
             </div>
-            <div className="modified-survey-card-wrapper">
-              <div className="modified-survey-title">
-                <span className="modified-survey-number"></span>
-                <div className="modified-survey-title"></div>
+            <div className="modified-survey-card-wrapper survey-card">
+              <div className="modified-survey-title-wrapper">
+                <span className="modified-survey-number">Q5</span>
+                <input placeholder="설문의 질문을 입력해주세요" type="text" className="modified-survey-title-text-input"></input>
                 <div className="modified-survey-category"></div>
               </div>
-              <div className="modified-survey-contents">
-                <div className="modified-survey-choice-text">
+              <div className="modified-survey-contents-wrapper">
+                <div className="modified-survey-choice-wrapper">
+                  <div className="modified-survey-choice-circle"></div>
+                  <input placeholder="입력해주세요" className="modified-survey-choice-text-input"></input>
+                  <div className="modified-survey-choice-add-btn"></div>
+                  <div className="modified-survey-choice-remove-btn"></div>
+                </div>
+                <div className="modified-survey-choice-wrapper">
 
                 </div>
-                <div className="modified-survey-choice-text">
+                <div className="modified-survey-choice-wrapper">
 
                 </div>
-                <div className="modified-survey-choice-text">
-
-                </div>
+              </div>
+              <div className="">
+                <div>Cancel</div>
+                <div></div>
               </div>
             </div>
           </div>

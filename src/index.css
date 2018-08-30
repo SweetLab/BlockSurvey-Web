@@ -27,3 +27,7 @@ input {
 .filter {
   flex-grow: 1;
 }
+
+.pointer-cursor {
+  cursor: pointer;
+}

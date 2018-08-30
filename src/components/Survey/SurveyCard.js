@@ -44,7 +44,7 @@ class SurveyCard extends Component {
     } = this.props;
     
     return (
-      <div className="modified-survey-card-wrapper survey-card">
+      <div className="modified-survey-card-wrapper create-survey-card">
         <div className="modified-survey-title-wrapper">
           <span className="modified-survey-number">{`Q${questionNumber}`}</span>
           <input 
@@ -68,16 +68,16 @@ class SurveyCard extends Component {
                   placeholder="입력해주세요" 
                   className="modified-survey-choice-text-input" 
                 />
-                <div className="modified-survey-choice-add-btn" onClick = { _ => addSurveyChoice(questionNumber) }></div>
-                <div className="modified-survey-choice-remove-btn" onClick = { _ => deleteSurveyChoice(questionNumber, index) }></div>
+                <div className="modified-survey-choice-add-btn pointer-cursor" onClick = { _ => addSurveyChoice(questionNumber) }></div>
+                <div className="modified-survey-choice-remove-btn pointer-cursor" onClick = { _ => deleteSurveyChoice(questionNumber, index) }></div>
               </div>
             ) : false
           }
         </div>
         <div className="modified-survey-btn-wrapper">
           <div className="filter"></div>
-          <div className="modified-survey-cancel-btn" onClick = { _ => deleteSurvey(questionNumber) }>Delete</div>
-          <div className="modified-survey-save-btn" onClick = { _ => changeIsModified(questionNumber) }>Save</div>
+          <div className="modified-survey-cancel-btn pointer-cursor" onClick = { _ => deleteSurvey(questionNumber) }>Delete</div>
+          <div className="modified-survey-save-btn pointer-cursor" onClick = { _ => changeIsModified(questionNumber) }>Save</div>
         </div>
       </div>
     )
@@ -89,10 +89,12 @@ class SurveyCard extends Component {
       questionTitle,
       choices,
       isChoice,
+      isAdmin,
       changeIsModified
     } = this.props;
+
     return (
-      <div className="survey-card-wrapper survey-card" onDoubleClick = { _ => changeIsModified(questionNumber) }>
+      <div className = { `survey-card-wrapper ${ isAdmin ? 'create-survey-card' : 'do-survey-card'}` } onDoubleClick = { isAdmin ? _ => changeIsModified(questionNumber) : _ => {} }>
         <span className="survey-number">{`Q${questionNumber}`}</span>
         <span className="survey-title">{ questionTitle }</span>
         <div className="survey-contents">
@@ -100,9 +102,9 @@ class SurveyCard extends Component {
             {
               isChoice ?
               choices.map((choice, index) => 
-                <div className="survey-choice" key = { index }>
+                <div className="survey-choice pointer-cursor" key = { index }>
                   <span className="survey-choice-number">{ index + 1 }</span>
-                  <span className="survey-choice-text">{choice}</span>
+                  <span className="survey-choice-text">{ choice }</span>
                 </div>
               ) :
               <div className="survey-"></div>

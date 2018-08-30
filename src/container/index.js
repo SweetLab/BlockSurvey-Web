@@ -3,6 +3,7 @@ import Participate from './Participate/Participate';
 import MyPage from './MyPage/MyPage';
 import SurveyJoin from './Participate/SurveyJoin';
 import CreateSurvey from './Survey/CreateSurvey';
+import DoSurvey from './Survey/DoSurvey';
 
 
 export {
@@ -10,5 +11,6 @@ export {
   Participate,
   MyPage,
   SurveyJoin,
-  CreateSurvey
+  CreateSurvey,
+  DoSurvey
 };

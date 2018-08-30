@@ -10,19 +10,22 @@ class CreateSurvey extends Component {
         questionTitle: 'In domitory, what food do you want?',
         choices: ['Example text', 'Example text','Example text','Example text','Example text'],
         isChoice: true,
-        isModified: false
+        isModified: false,
+        isAdmin: true,
       },
       {
         questionTitle: 'In domitory, what food do you want?',
         choices: ['Example text', 'Example text'],
         isChoice: true,
-        isModified: false
+        isModified: false,
+        isAdmin: true,
       },
       {
         questionTitle: 'In domitory, what food do you want?',
         choices: ['Example text', 'Example text'],
         isChoice: true,
-        isModified: true
+        isModified: true,
+        isAdmin: true,
       }
     ]
   }

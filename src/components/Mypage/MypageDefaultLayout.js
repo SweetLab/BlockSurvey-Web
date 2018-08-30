@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TopBar, Navi } from './index';
+import { TopBar, Navi, Main } from './index';
 import './css/MypageDefaultLayout.css';
 
 class MypageDefaultLayout extends Component {
@@ -18,6 +18,7 @@ class MypageDefaultLayout extends Component {
         </div>
         <div className="Add"></div>
         <Navi />
+        <Main />
       </div>
     );
   }

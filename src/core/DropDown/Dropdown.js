@@ -18,7 +18,7 @@ class Dropdowns extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      selected: ''
+      selected: '객관식'
     }
     this._onSelect = this._onSelect.bind(this)
   }

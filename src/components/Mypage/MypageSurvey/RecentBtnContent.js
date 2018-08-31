@@ -20,8 +20,8 @@ class RecentBtnContent extends Component {
                     <div className="filter"></div>
 
                     <div className="RaffleComplate">
-                        <div className="Raffle">추첨</div>
-                        <div className="Complate">완료</div>
+                        <div className="Raffle"><span>추첨</span></div>
+                        <div className="Complate"><span>완료</span></div>
                     </div>
 
                     <div className="_SurveyICON">

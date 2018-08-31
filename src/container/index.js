@@ -4,7 +4,7 @@ import MyPage from './MyPage/MyPage';
 import SurveyJoin from './Participate/SurveyJoin';
 import CreateSurvey from './Survey/CreateSurvey';
 import DoSurvey from './Survey/DoSurvey';
-
+import CreateSurveyMain from './Survey/CreateSurveyMain';
 
 export {
   Main,
@@ -12,5 +12,6 @@ export {
   MyPage,
   SurveyJoin,
   CreateSurvey,
-  DoSurvey
+  DoSurvey,
+  CreateSurveyMain
 };

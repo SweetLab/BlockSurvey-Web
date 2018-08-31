@@ -35,7 +35,7 @@ class CreateSurvey extends Component {
     return (
       <div id="create-survey-container">
         <div id="create-survey-header-section">
-        
+          <span id="create-survey-header-text">Survey is BlockSurvey</span>
         </div>
         <div id="create-survey-body-section">
           <div id="survey-card-section">

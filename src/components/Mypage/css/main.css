@@ -18,7 +18,6 @@
 }
 
 .MypageMain .header .UserData {
-    width: 111px;
     height: 100%;
     font-family: Roboto;
     font-size: 16px;
@@ -99,6 +98,10 @@
     line-height: 1.19;
     text-align: left;
     color: #444444;
+}
+
+.MypageMain .LoginDetails .LoginMain .LoginData .Slide .Contents .UserText.walletAddr{
+    letter-spacing: -2px;
 }
 
 .MypageMain .LoginDetails .LoginMain .LoginData .Slide .Contents .Edit{

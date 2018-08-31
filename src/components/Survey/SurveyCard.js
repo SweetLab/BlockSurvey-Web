@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './css/surveyCard.css';
+import DropDown from '../../core/DropDown/Dropdown'
 
 class SurveyCard extends Component {
   state = {
@@ -54,7 +55,9 @@ class SurveyCard extends Component {
             type="text" 
             className="modified-survey-title-text-input" 
           />
-          <div className="modified-survey-category"></div>
+          <div className="modified-survey-category">
+            <DropDown />
+          </div>
         </div>
         <div className="modified-survey-contents-wrapper">
           {

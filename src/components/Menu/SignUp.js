@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Redirect} from 'react-router';
 import Web3 from 'web3';
 import axios from 'axios';
 import Inputbox from './Inputbox'
@@ -33,18 +32,12 @@ class SignUp extends Component {
   }
   SignUpCall() {
     const { address } = this.props;
-    const { id, pw, pwcheck, email } = this.state;
+    const { id, pw, email } = this.state;
 		const ABI = [{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"pollID","type":"uint256"}],"name":"getPoll","outputs":[{"name":"creator","type":"address"},{"name":"starttime","type":"uint256"},{"name":"endTime","type":"uint256"},{"name":"answerLimit","type":"uint256"},{"name":"answerCount","type":"uint256"},{"name":"deposit","type":"uint256"},{"name":"isFinished","type":"bool"},{"name":"questionSheet","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"pollID","type":"uint256"}],"name":"finishPoll","outputs":[{"name":"isSuccessed","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_value","type":"uint256"}],"name":"burn","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"addUser","outputs":[{"name":"isSuccessed","type":"bool"},{"name":"userID","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"pollID","type":"uint256"},{"name":"answer","type":"string"}],"name":"createAnswer","outputs":[{"name":"result","type":"bool"},{"name":"answerID","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"user","type":"address"}],"name":"confirmUser","outputs":[{"name":"isSuccessed","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balanceOf","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_value","type":"uint256"}],"name":"burnFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"pollID","type":"uint256"},{"name":"answerID","type":"uint256"}],"name":"getAnswer","outputs":[{"name":"question","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"},{"name":"_extraData","type":"bytes"}],"name":"approveAndCall","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"answerLimit","type":"uint256"},{"name":"timeLimit","type":"uint256"},{"name":"questionSheet","type":"string"},{"name":"fee","type":"uint256"}],"name":"createPoll","outputs":[{"name":"pollID","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"pollID","type":"uint256"}],"name":"getQuestion","outputs":[{"name":"question","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"address"}],"name":"allowance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_owner","type":"address"},{"indexed":true,"name":"_spender","type":"address"},{"indexed":false,"name":"_value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Burn","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"creater","type":"address"},{"indexed":false,"name":"pollid","type":"uint256"}],"name":"createdPoll","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"user","type":"address"},{"indexed":false,"name":"pollid","type":"uint256"},{"indexed":false,"name":"time","type":"uint256"}],"name":"JoinedPoll","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"user","type":"address"},{"indexed":false,"name":"pollid","type":"uint256"},{"indexed":false,"name":"answerid","type":"uint256"}],"name":"createdAnswer","type":"event"}]
     const contractAddr = "0xb0FB0185d0b673C6a89a6557e5EDA16399c36eD5";
 		const web3 = new Web3(Web3.givenProvider);
 		const BlockSurvey = new web3.eth.Contract(ABI, contractAddr);
     const value = web3.utils.toWei('1000', 'ether');
-    const idReg = /^[a-z]+[a-z0-9]{5,19}$/g;
-    const pwReg = /^(?=.*[a-zA-Z])(?=.*[0-9]).{8,16}$/;
-    const emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/;
-
-
-    if(idReg.test(id) && pwReg.test(pw) && (pw === pwcheck) && emailReg.test(email)){
       BlockSurvey.methods.approve(address, value).send(
         {
           from: address,
@@ -59,11 +52,11 @@ class SignUp extends Component {
                 "id": id,
                 "password":pw,
                 "email": email,
-                "walletAddress":address
+                "walletAddr":address
               }
               }).then((res)=> {
               if(res.status === 200){
-                return (<Redirect to="/"/>)
+                return (window.location.reload(true))
               } else {
                 ToastUtils.showErrorToast("서버에서 오류가 일어났습니다. 나중에 다시 보내주세요");
               }
@@ -74,6 +67,5 @@ class SignUp extends Component {
       );
     }
 	}
-}
  
 export default SignUp;

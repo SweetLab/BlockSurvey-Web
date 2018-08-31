@@ -14,15 +14,15 @@ class MypageDefaultLayout extends Component {
   render() { 
     return (
       <div className="MypageDefaultLayout">
-        <MypageTopBar />
+        <MypageTopBar/>
         <div className="Title">
           <span className="TitleText">My Account</span>
         </div>
         <div className="Add"></div>
         {cookie.load("Token") ? 
         <React.Fragment>
-          <MypageNavi />
-          <MypageMain />
+          <MypageNavi page={this.props.page} changePage={this.props.changePage}/>
+          {this.props.page===0 ? <MypageMain /> : <MypageMain />}
         </React.Fragment> :
         <div className="Mypage-ErrorMsg">My Page is available after login.
         <br/>

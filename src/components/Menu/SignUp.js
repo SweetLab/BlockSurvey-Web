@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Redirect} from 'react-router';
 import Web3 from 'web3';
 import axios from 'axios';
 import Inputbox from './Inputbox'

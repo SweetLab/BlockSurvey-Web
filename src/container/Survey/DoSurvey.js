@@ -31,8 +31,8 @@ class DoSurvey extends Component {
         answer: []
       }
     ],
-    isLast: false,
-    isFirst: true,
+    isLast: false, //현재 선택된 질문이 마지막인지
+    isFirst: true, //현재 선택된 질문이 처음인지 요청을 받은후에 length를 통해서 판별해서 데이터와 같이 setState
     currentQuestion: 0
   }
 
@@ -61,7 +61,7 @@ class DoSurvey extends Component {
           {
             isLast ?
             <div id="do-survey-submit-btn-wrapper">
-              <div id="do-survey-submit-btn" className="pointer-cursor">Submit</div>
+              <div id="do-survey-submit-btn" className="pointer-cursor" onClick = {this.surveySubmitBtnClick}>Submit</div>
             </div> :
             false
           }
@@ -78,6 +78,10 @@ class DoSurvey extends Component {
         </div>
       </div>
     );
+  }
+
+  surveySubmitBtnClick = _ => {
+    //서버요청 해주세용
   }
 
   moveSurveyQuestion = type => {

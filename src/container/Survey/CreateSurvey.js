@@ -35,7 +35,7 @@ class CreateSurvey extends Component {
     return (
       <div id="create-survey-container">
         <div id="create-survey-header-section">
-        
+          <span id="create-survey-header-text">Survey is BlockSurvey</span>
         </div>
         <div id="create-survey-body-section">
           <div id="survey-card-section">
@@ -59,11 +59,15 @@ class CreateSurvey extends Component {
             <div id="add-survey-question-btn" onClick = { this.addSurvey } >Add Question</div>
           </div>
           <div id="create-survey-btn-wrapper">
-            <div id="create-survey-btn">Save</div>
+            <div id="create-survey-btn" onClick = {this.createSurveyBtnClick}>Save</div>
           </div>
         </div>
       </div>
     );
+  }
+
+  createSurveyBtnClick = _ => {
+    //서버 요청 
   }
 
   addSurvey = _ => {

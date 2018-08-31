@@ -41,7 +41,7 @@ class SignUp extends Component {
       BlockSurvey.methods.approve(address, value).send(
         {
           from: address,
-          to:'0xb0FB0185d0b673C6a89a6557e5EDA16399c36eD5',
+          to:'0x70bda538233886919286e135265f9bc1831f15fa',
         }
       ).then(function (result) {
             console.log("Sent done!");

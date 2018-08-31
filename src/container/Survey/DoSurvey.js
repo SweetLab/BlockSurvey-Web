@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import SurveyCard from '../../components/Survey/SurveyCard';
 import update from 'react-addons-update';
 import './css/doSurvey.css';
+import axios from 'axios'
+import Web3 from 'web3'
 
 class DoSurvey extends Component {
   state = {
@@ -35,7 +37,9 @@ class DoSurvey extends Component {
     isFirst: true, //현재 선택된 질문이 처음인지 요청을 받은후에 length를 통해서 판별해서 데이터와 같이 setState
     currentQuestion: 0
   }
+  componentWillMount(){
 
+  }
   render() { 
     const { 
       surveies, 
@@ -43,7 +47,8 @@ class DoSurvey extends Component {
       isFirst, 
       currentQuestion 
     } = this.state;
-    
+    console.log(btoa(surveies))
+    console.log(atob(btoa(surveies)))
     return (
       <div id="do-survey-container">
         <div id="do-survey-contents-wrapper">
@@ -81,7 +86,7 @@ class DoSurvey extends Component {
   }
 
   surveySubmitBtnClick = _ => {
-    //서버요청 해주세용
+    
   }
 
   moveSurveyQuestion = type => {

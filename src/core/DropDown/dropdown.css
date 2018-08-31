@@ -29,7 +29,7 @@ pre code {
   display: inline-block;
   padding: 4px;
   position: absolute;
-  right: -8px;
+  right: 10px;
 }
 
 .arrow-closed {
@@ -52,7 +52,7 @@ pre code {
 }
 
 .Dropdown-control {
-  width: 100px;
+  width: 120px;
   height: 34px;
   background-color: #ffffff;
   border: solid 0.5px var(--black-36);

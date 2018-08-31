@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MypageTopBar, MypageNavi, MypageMain } from './index';
+import { MypageTopBar, MypageNavi, MypageMain, MypageSurvey } from './index';
 import './css/MypageDefaultLayout.css';
 import cookie from 'react-cookies'
 import {Link} from 'react-router-dom'
@@ -22,7 +22,7 @@ class MypageDefaultLayout extends Component {
         {cookie.load("Token") ? 
         <React.Fragment>
           <MypageNavi page={this.props.page} changePage={this.props.changePage}/>
-          {this.props.page===0 ? <MypageMain /> : <MypageMain />}
+          {this.props.page===0 ? <MypageMain /> : <MypageSurvey />}
         </React.Fragment> :
         <div className="Mypage-ErrorMsg">My Page is available after login.
         <br/>

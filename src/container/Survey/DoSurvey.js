@@ -12,11 +12,11 @@ class DoSurvey extends Component {
         isChoice: true,
         isModified: false,
         isAdmin: false,
-        answer: []
+        answer: [1]
       },
       {
         questionTitle: 'In domitory, what food do you want?',
-        choices: ['Example text', 'Example text'],
+        choices: ['Example text', 'Example text','Example text','Example text','Example text','Example text','Example text','Example text','Example text','Example text','Example text'],
         isChoice: true,
         isModified: false,
         isAdmin: false,
@@ -55,6 +55,7 @@ class DoSurvey extends Component {
           <SurveyCard 
             key = { currentQuestion + 1 } 
             questionNumber = { currentQuestion + 1 }
+            selectAnswer = { this.selectSurveyAnswer }
             { ...surveies[currentQuestion] } 
           />
           {
@@ -102,6 +103,26 @@ class DoSurvey extends Component {
 
       default: return;
     }
+  }
+
+  selectSurveyAnswer = (questionNumber, answer) => {
+    const { isChoice } = this.state.surveies[questionNumber - 1];
+    let newAnswer = this.state.surveies[questionNumber - 1].answer;
+    if(isChoice && newAnswer.includes(answer)) {
+      newAnswer.splice(newAnswer.indexOf(answer), 1);
+
+    } else {
+      if(isChoice) {
+        newAnswer.push(answer);
+      } else {
+        newAnswer[0] = answer;
+      }
+    }
+
+
+    this.setState({
+      surveies: update(this.state.surveies, {[questionNumber - 1]: {answer: {$set: newAnswer}}})
+    });
   }
 }
  

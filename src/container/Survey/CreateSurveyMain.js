@@ -22,7 +22,7 @@ class CreateSurveyMain extends Component {
           <div className="filter"></div>
           <div id="create-survey-main-input-wrapper">
             <input type="text" placeholder="Put in your Survey Name" id="create-survey-main-input" value = { surveyName } onChange = {this.inputOnChange}/>
-            <div id="create-survey-main-submit-btn" className="filter">➔</div>
+            <div id="create-survey-main-submit-btn" className="filter" onClick = {this.submitBtnClick}>➔</div>
           </div>
         </div>
       </div>
@@ -33,6 +33,10 @@ class CreateSurveyMain extends Component {
     const { value } = event.target;
 
     this.setState({ surveyName: value });
+  }
+
+  submitBtnClick = _ => {
+    //서버 요청
   }
 }
  

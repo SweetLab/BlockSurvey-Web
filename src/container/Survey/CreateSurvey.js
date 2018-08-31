@@ -59,11 +59,15 @@ class CreateSurvey extends Component {
             <div id="add-survey-question-btn" onClick = { this.addSurvey } >Add Question</div>
           </div>
           <div id="create-survey-btn-wrapper">
-            <div id="create-survey-btn">Save</div>
+            <div id="create-survey-btn" onClick = {this.createSurveyBtnClick}>Save</div>
           </div>
         </div>
       </div>
     );
+  }
+
+  createSurveyBtnClick = _ => {
+    //서버 요청 
   }
 
   addSurvey = _ => {

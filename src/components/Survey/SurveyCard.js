@@ -93,6 +93,8 @@ class SurveyCard extends Component {
       choices,
       isChoice,
       isAdmin,
+      answer,
+      selectAnswer,
       changeIsModified
     } = this.props;
 
@@ -105,7 +107,11 @@ class SurveyCard extends Component {
             {
               isChoice ?
               choices.map((choice, index) => 
-                <div className="survey-choice pointer-cursor" key = { index }>
+                <div 
+                  className = { `survey-choice pointer-cursor ${ (!isAdmin && answer.includes(index + 1)) ? 'selected' : '' }` } 
+                  key = { index } 
+                  onClick = { !isAdmin ? _ => selectAnswer(questionNumber, index + 1) : _ => {} }
+                >
                   <span className="survey-choice-number">{ index + 1 }</span>
                   <span className="survey-choice-text">{ choice }</span>
                 </div>

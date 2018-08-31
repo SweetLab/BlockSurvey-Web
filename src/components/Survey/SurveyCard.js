@@ -41,7 +41,8 @@ class SurveyCard extends Component {
       modifyInputText,
       deleteSurvey,
       deleteSurveyChoice,
-      addSurveyChoice
+      addSurveyChoice,
+      changeSurveyQuestionCategory
     } = this.props;
     
     return (
@@ -56,7 +57,11 @@ class SurveyCard extends Component {
             className="modified-survey-title-text-input" 
           />
           <div className="modified-survey-category">
-            <DropDown />
+            <DropDown 
+              _onSelect = { changeSurveyQuestionCategory }
+              selected = { isChoice ? '객관식' : '단일입력란' }
+              questionNumber = { questionNumber }
+            />
           </div>
         </div>
         <div className="modified-survey-contents-wrapper">
@@ -97,31 +102,40 @@ class SurveyCard extends Component {
       selectAnswer,
       changeIsModified
     } = this.props;
-
+  
     return (
       <div className = { `survey-card-wrapper ${ isAdmin ? 'create-survey-card' : 'do-survey-card'}` } onDoubleClick = { isAdmin ? _ => changeIsModified(questionNumber) : _ => {} }>
         <span className="survey-number">{`Q${questionNumber}`}</span>
         <span className="survey-title">{ questionTitle }</span>
         <div className="survey-contents">
-          <div className="survey-choice-wrapper">
             {
               isChoice ?
-              choices.map((choice, index) => 
-                <div 
-                  className = { `survey-choice pointer-cursor ${ (!isAdmin && answer.includes(index + 1)) ? 'selected' : '' }` } 
-                  key = { index } 
-                  onClick = { !isAdmin ? _ => selectAnswer(questionNumber, index + 1) : _ => {} }
-                >
-                  <span className="survey-choice-number">{ index + 1 }</span>
-                  <span className="survey-choice-text">{ choice }</span>
+              <React.Fragment>
+                <div className="survey-choice-wrapper"> 
+                  {
+                    choices.map((choice, index) => 
+                      <div 
+                        className = { `survey-choice pointer-cursor ${ (!isAdmin && answer.includes(index + 1)) ? 'selected' : '' }` } 
+                        key = { index } 
+                        onClick = { !isAdmin ? _ => selectAnswer(questionNumber, index + 1) : _ => {} }
+                      >
+                        <span className="survey-choice-number">{ index + 1 }</span>
+                        <span className="survey-choice-text">{ choice }</span>
+                      </div>
+                    ) 
+                  }
+                </div> 
+                <div className="survey-vertical-line-wrapper">
+                  <div className="survey-vertical-line"></div>
+                </div> 
+              </React.Fragment> :
+              <div className="survey-descriptive-wrapper"> 
+                <div className="survey-descriptive-text-input-wrapper">
+                  <input className="survey-descriptive-text-input"/>
+                  <span className="survey-descriptive-text-title">Pull In</span>
                 </div>
-              ) :
-              <div className="survey-"></div>
+              </div>
             }
-          </div>
-          <div className="survey-vertical-line-wrapper">
-            <div className="survey-vertical-line"></div>
-          </div>
         </div>
       </div>
     )

@@ -15,27 +15,15 @@ const arrowOpen = (
 
 
 class Dropdowns extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      selected: ''
-    }
-    this._onSelect = this._onSelect.bind(this)
-  }
-
-  _onSelect (option) {
-    this.setState({selected: option})
-  }
-
   render() {
-    const defaultOption = this.state.selected
+    const { selected, _onSelect, questionNumber } = this.props;
 
     return (
         <Dropdown 
           className="DropDown"  
           options={options} 
-          onChange={this._onSelect} 
-          value={defaultOption} 
+          onChange={ category => _onSelect(category.value, questionNumber) } 
+          value={ selected } 
           placeholder="선택" 
           arrowClosed={arrowClosed}
           arrowOpen={arrowOpen}

@@ -11,6 +11,7 @@
 .modified-survey-card-wrapper {
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 50px;
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,6 +54,40 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.survey-descriptive-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+.survey-descriptive-text-input-wrapper {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.survey-descriptive-text-input {
+  width: 100%;
+  height: 100%;
+  border: solid 2px #419cea;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.survey-descriptive-text-title {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  color: #419cea;
+  transform: translate(0, -50%);
+  padding: 0 5px;
 }
 
 .survey-choice {
@@ -123,7 +158,7 @@
 
 .modified-survey-category {
   width: 122px;
-  height: 34px;
+  height: 35px;
   border: solid 0.5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }

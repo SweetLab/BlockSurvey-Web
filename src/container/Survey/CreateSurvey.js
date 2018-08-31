@@ -49,6 +49,7 @@ class CreateSurvey extends Component {
                   questionNumber = { index + 1 }
                   addSurveyChoice = { this.addSurveyChoice }
                   deleteSurveyChoice = { this.deleteSurveyChoice }
+                  changeSurveyQuestionCategory = { this.changeSurveyQuestionCategory }
                   {...survey} 
                 />
               )
@@ -70,7 +71,8 @@ class CreateSurvey extends Component {
       questionTitle: '',
       choices: [''],
       isChoice: true,
-      isModified: true
+      isModified: true,
+      isAdmin: true,
     }
     const newSurveies = this.state.surveies;
     newSurveies.push(newSurvey);
@@ -111,11 +113,10 @@ class CreateSurvey extends Component {
 
 
   changeIsModified = questionNumber => {
-    const targetIdx = questionNumber - 1;
-    const changeIsModified = !this.state.surveies[targetIdx].isModified;
+    const changeIsModified = !this.state.surveies[questionNumber - 1].isModified;
 
     this.setState({
-      surveies: update(this.state.surveies, {[targetIdx]: {isModified: {$set: changeIsModified}}})
+      surveies: update(this.state.surveies, {[questionNumber - 1]: {isModified: {$set: changeIsModified}}})
     });
   }
 
@@ -137,6 +138,15 @@ class CreateSurvey extends Component {
     
     this.setState({
       inputText: dumpArr
+    });
+  }
+
+  changeSurveyQuestionCategory = (category, questionNumber) => {
+    let survey= this.state.surveies[questionNumber - 1];
+    const newIsChoice = survey.isChoice = category === '객관식' ? true : false;
+    
+    this.setState({
+      surveies: update(this.state.surveies, {[questionNumber - 1]: {isChoice: {$set: newIsChoice}}})
     });
   }
 }

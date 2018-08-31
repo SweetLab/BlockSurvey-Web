@@ -9,7 +9,7 @@ class DoSurvey extends Component {
       {
         questionTitle: 'In domitory, what food do you want?',
         choices: ['Example text', 'Example text','Example text','Example text','Example text'],
-        isChoice: true,
+        isChoice: false,
         isModified: false,
         isAdmin: false,
         answer: [1]

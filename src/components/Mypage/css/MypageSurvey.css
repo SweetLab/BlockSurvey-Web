@@ -1,0 +1,130 @@
+.MypageSurvey {
+    width: 100%;
+    height: 1930px;
+    background-color: rgb(242, 242, 242);
+    position: relative;
+}
+
+.MypageSurvey .MypageContent {
+    width: 720px;
+    height: 1770px;
+    position: absolute;
+    top: 3.5%;
+    left: 50%;
+    margin-left: -360px;
+}
+
+.MypageSurvey .MypageContent .BasicSurvey {
+    height: 291px;
+}
+
+.MypageSurvey .MypageContent .BasicSurvey .BasicSurveyTitle {
+    width: 124px;
+    height: 43px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.19;
+    text-align: left;
+    color: #444444;
+    margin-bottom: 48px;
+}
+
+.MypageSurvey .MypageContent .BasicSurvey .BasicContent {
+    width: 100%;
+    height: 136px;
+    display: flex;
+}
+
+.MypageSurvey .MypageContent .BasicSurvey .BasicContent .CreateContent {
+    width: 209px;
+    height: 100%;
+    background-color: #419cea;
+    display: block;
+    text-align: center;
+}
+
+.MypageSurvey .MypageContent .BasicSurvey .BasicContent .ParticipateContent {
+    width: 209px;
+    height: 100%;
+    background-color: #c2c2c2;
+    display: block;
+    text-align: center;
+}
+
+.MypageSurvey .MypageContent .BasicSurvey .BasicContent .SurveyCoinContent {
+    width: 302px;
+    height: 100%;
+    background-color: #444444;
+    display: block;
+    text-align: center;
+}
+
+.MypageSurvey .MypageContent .BasicSurvey .BasicContent .ContentName {
+    display: block;
+    width: 100%;
+    height: 29px;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 1.21;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 16px;
+    margin-bottom: 19px;
+}
+
+.MypageSurvey .MypageContent .BasicSurvey .BasicContent .ContentValue {
+    display: block;
+    width: 100%;
+    height: 58px;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.21;
+    text-align: center;
+    color: #ffffff;
+}
+
+.MypageSurvey .MypageContent .RecentSurvey {
+    height: 522px;
+}
+
+.MypageSurvey .MypageContent .RecentSurvey .RecentSurveyTitle {
+    width: 243px;
+    height: 43px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.19;
+    text-align: left;
+    color: #444444;
+    margin-bottom: 48px;
+}
+
+.MypageSurvey .MypageContent .CreatedSurvey {
+    height: 492px;
+}
+
+.MypageSurvey .MypageContent .CreatedSurvey .CreatedSurveyTitle {
+    width: 257px;
+    height: 43px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.19;
+    text-align: left;
+    color: #444444;
+    margin-bottom: 48px;
+}
+
+.MypageSurvey .MypageContent .ParticipatedSurvey .ParticipatedSurveyTitle {
+    width: 360px;
+    height: 43px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.19;
+    text-align: left;
+    color: #444444;
+    margin-bottom: 48px;
+}

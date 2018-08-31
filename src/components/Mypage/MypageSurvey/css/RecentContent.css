@@ -1,0 +1,109 @@
+.MypageSurvey ._SurveyBox  {
+    width: 720px;
+    height: 104px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.08);
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.MypageSurvey ._SurveyBox ._SurveyInfor {
+    width: 240px;
+    display: inline-block;
+    margin-left: 36px; 
+    position: relative;
+}
+
+.MypageSurvey ._SurveyBox ._SurveyInfor ._SurveyTitle {
+    width: 126px;
+    height: 29px;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.21;
+    text-align: center;
+    color: #444444;
+    margin-top: 24px;
+    display: block;
+}
+
+.MypageSurvey ._SurveyBox ._SurveyInfor ._SurveyUser{
+    width: 100px;
+    height: 24px;
+    opacity: 0.36;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
+    margin-right: 36px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+._SurveyICON {
+    display: flex;
+    align-items: center;
+}
+
+.MypageSurvey ._Survey_ParticipateUser ._SurveyBox ._SurveyInfor ._SurveyMember {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    bottom: 18px;
+}
+
+.MypageSurvey ._Survey_ParticipateUser ._SurveyBox ._SurveyInfor ._SurveyMember ._BlackUser {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    opacity: 0.48;
+    display: inline-block;
+}
+
+.MypageSurvey ._Survey_ParticipateUser ._SurveyBox ._SurveyInfor ._SurveyMember ._UserCount {
+    width: 77px;
+    height: 19px;
+    opacity: 0.48;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #000000;
+    display: inline-block;
+}
+
+.MypageSurvey ._Survey_ParticipateUser ._SurveyBox ._SurveyJoiner {
+    width: 64px;
+    height: 64px;
+    border: 4px solid #419cea;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.MypageSurvey ._Survey_ParticipateUser ._SurveyBox ._SurveyJoiner ._BlueUser {
+    width: 36px;
+    height: 36px;
+    margin-top: 8px;
+}
+
+.MypageSurvey ._Survey_ParticipateUser ._SurveyBox ._SurveyJoiner ._MemberCount {
+    width: 38px;
+    height: 14px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #419cea;
+    display: inline-block;
+    position: relative;
+    bottom: 12px;
+}

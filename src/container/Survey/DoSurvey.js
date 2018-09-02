@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import SurveyCard from '../../components/Survey/SurveyCard';
 import update from 'react-addons-update';
 import './css/doSurvey.css';
-import axios from 'axios'
-import Web3 from 'web3'
 
 class DoSurvey extends Component {
   state = {
@@ -22,7 +20,7 @@ class DoSurvey extends Component {
         isChoice: true,
         isModified: false,
         isAdmin: false,
-        answer: []
+        answer: [2]
       },
       {
         questionTitle: 'In domitory, what food do you want?',
@@ -30,7 +28,7 @@ class DoSurvey extends Component {
         isChoice: true,
         isModified: false,
         isAdmin: false,
-        answer: []
+        answer: [3]
       }
     ],
     isLast: false, //현재 선택된 질문이 마지막인지

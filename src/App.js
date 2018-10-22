@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {Main, Participate, MyPage, CreateSurvey, DoSurvey, CreateSurveyMain} from './container/index';
+import MypageSurveyResult from './components/Mypage/MypageSurvey/MypageSurveyResult'
 
 class App  extends Component {
   render() {
@@ -11,6 +12,7 @@ class App  extends Component {
             <Route path='/' component={Main} exact/>
             <Route path='/survey/participate' component={Participate} exact/>
             <Route path = '/mypage' component = { MyPage } exact/>
+            <Route path = '/mypage/result/:uid' component = { MypageSurveyResult } exact/>
             <Route path='/survey/create' component = { CreateSurveyMain } exact/>
             <Route path='/survey/create/:surveyId' component = { CreateSurvey } exact/>
             <Route path='/survey/participate/:uid' component = { DoSurvey } exact/>

@@ -33,6 +33,13 @@ class TopBar extends Component {
                             <i className="fas fa-user-alt"></i>
                             Login
                         </div>}
+                        {cookie.load('Token')!==undefined?
+                            <div className="Loginbtn" onClick={()=> {this.setState({onLogin:false, onMenu:false}); cookie.remove('Token')}}>
+                            <i className="fas fa-user-alt"></i>Logout
+                        </div>
+                        : 
+                        null
+                        }
                         {onLogin | onMenu ? 
                             <img src={menuXbtn} alt="메뉴버튼" onClick={()=> this.setState({onLogin:false, onMenu:false})} style={{width:"75px", height: "75px"}}/> : 
                             <img src={menuBtn} alt="메뉴버튼" onClick={()=> this.setState({onLogin:false, onMenu:true})} style={{width:"75px", height: "75px"}}/>

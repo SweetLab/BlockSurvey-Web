@@ -1,0 +1,11 @@
+.SurveyResult{
+  width: 100%;
+  height: 100%;
+}
+
+.SurveyResult-wrapper{
+  width: 1160px;
+  background-color: #ffffff;
+  box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+}

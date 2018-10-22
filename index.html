@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BlockSurvey 기획서</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+  <style>
+  .container{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    font-family: 'Nanum Square';
+  }
+  .logo{
+    width:60px;
+    display:inline-block;
+  }
+  .title{
+    display:inline-block;
+    line-height: 60px;
+    margin: 0 0 0 30px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .pdf{
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+  }
+  .pdf-container{
+    display: flex;
+    justify-content: center;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./Logo.png" alt="로고" class="logo"/> <span class="title">BlockSurvey 기획서</span>
+  </div>
+  <hr/>
+  <div class="pdf-container">
+    <object data="./BlockSurvey 기획서.pdf" type="application/pdf" class="pdf">
+      <embed src="./BlockSurvey 기획서.pdf" type="application/pdf" />
+    </object>
+  </div>
+</body>
+</html>

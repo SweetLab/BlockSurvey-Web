@@ -60,6 +60,12 @@
   position: absolute;
   top: 50%;
   background-color: #419cea;
+  border-radius: 100px;
+  line-height: 80px;
+  text-align: center;
+  color: #FFF;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 #move-prev {
@@ -74,4 +80,14 @@
 
 .selected span {
   color: #419cea;
+}
+
+.survey-choice.pointer-cursor.selected .survey-choice-number{
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-color: #419cea;
+  color: #FFF;
+  border-radius: 75px;
+  text-align: center;
 }

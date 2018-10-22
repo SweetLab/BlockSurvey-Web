@@ -132,7 +132,7 @@ class SurveyCard extends Component {
               <div className="survey-descriptive-wrapper"> 
                 <div className="survey-descriptive-text-input-wrapper">
                   <input className="survey-descriptive-text-input"/>
-                  <span className="survey-descriptive-text-title">Pull In</span>
+                  <span className="survey-descriptive-text-title">Put In</span>
                 </div>
               </div>
             }

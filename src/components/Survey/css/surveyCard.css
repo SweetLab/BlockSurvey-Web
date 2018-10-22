@@ -104,9 +104,11 @@
 .survey-choice-number {
   font-size: 36px;
   color: #6e6e6e;
-  width: 80px;
+  width: 42px;
   margin-right: 20px;
   text-align: center;
+  display: block;
+  height: 42px;
 }
 
 .survey-choice-text {
@@ -241,4 +243,9 @@
   color: white;
   line-height: 40px;
   text-align: center;
+}
+
+.survey-contents Result{
+  position: relative;
+  left: -100px;
 }

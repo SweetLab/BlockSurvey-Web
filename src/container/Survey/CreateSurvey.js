@@ -12,26 +12,13 @@ class CreateSurvey extends Component {
   state = {
     surveies: [
       {
-        questionTitle: 'In domitory, what food do you want?',
-        choices: ['Example text', 'Example text','Example text','Example text','Example text'],
+        questionTitle: 'Example',
+        choices: ['Example text'],
         isChoice: true,
         isModified: false,
         isAdmin: true,
+        answer: [],
       },
-      {
-        questionTitle: 'ㅁㄴㅇㄹㄴㅁㅇㄹㅁㄴㄹㅁㄴㅇㄹㄴㅁㅇㄹㄴㅁㅇ',
-        choices: ['Example text', 'Example text'],
-        isChoice: true,
-        isModified: false,
-        isAdmin: true,
-      },
-      {
-        questionTitle: 'In domitory, what food do you want?',
-        choices: ['Example text', 'Example text'],
-        isChoice: true,
-        isModified: true,
-        isAdmin: true,
-      }
     ],
     limit: 0,
     SVT: 0,
@@ -62,7 +49,7 @@ class CreateSurvey extends Component {
             {
               surveies.map((survey, index) => 
                 <SurveyCard 
-                  key = { index + 1 } 
+                  key = { index } 
                   changeIsModified = { this.changeIsModified }
                   modifyInputText = { this.modifyInputText }
                   deleteSurvey = { this.deleteSurvey }
@@ -104,6 +91,12 @@ class CreateSurvey extends Component {
 		const web3 = new Web3(Web3.givenProvider);
 		const BlockSurvey = new web3.eth.Contract(ABI, contractAddr);
     const value = web3.utils.toWei(SVT, 'ether');
+    
+    surveies.map( survey => {
+      survey.isAdmin = false;
+      if(!survey.isChoice) survey.answer.push('');
+    });
+
       BlockSurvey.methods.createPoll(limit, 1000000000000, Base64.encodeURI(JSON.stringify(surveies)) ,value).send(
         {
           from: userAddr,
@@ -139,6 +132,7 @@ class CreateSurvey extends Component {
       isChoice: true,
       isModified: true,
       isAdmin: true,
+      answer: []
     }
     const newSurveies = this.state.surveies;
     newSurveies.push(newSurvey);
